@@ -26,12 +26,12 @@ export default function ProductPage({ params }: ProductPageProps) {
   const { addToCart } = useCart();
   const [quantity, setQuantity] = useState(1);
   const [addedToCart, setAddedToCart] = useState(false);
-  
+
   // If product not found, show 404
   if (!product) {
     notFound();
   }
-  
+
   // Format price
   const formatPrice = (amount: number, currency: string = 'USD') => {
     return new Intl.NumberFormat('en-US', {
@@ -39,38 +39,40 @@ export default function ProductPage({ params }: ProductPageProps) {
       currency: currency,
     }).format(amount);
   };
-  
+
   // Handle add to cart
   const handleAddToCart = () => {
     addToCart(product, quantity);
     setAddedToCart(true);
     setTimeout(() => setAddedToCart(false), 2000);
   };
-  
+
   // Stock status styling
   const stockStatusClass = {
     'in-stock': 'text-green-600 dark:text-green-400 bg-green-50 dark:bg-green-900/20',
     'on-request': 'text-yellow-600 dark:text-yellow-400 bg-yellow-50 dark:bg-yellow-900/20',
     'out-of-stock': 'text-red-600 dark:text-red-400 bg-red-50 dark:bg-red-900/20',
+    'low-stock': 'text-orange-600 dark:text-orange-400 bg-orange-50 dark:bg-orange-900/20',
   }[product.stockStatus];
-  
+
   const stockStatusText = {
     'in-stock': 'In Stock',
     'on-request': 'Available on Request',
     'out-of-stock': 'Out of Stock',
+    'low-stock': 'Low Stock',
   }[product.stockStatus];
-  
+
   return (
     <div className="min-h-screen bg-background-light dark:bg-background-dark">
       <div className="max-w-7xl mx-auto px-4 sm:px-8 lg:px-10 py-8">
         {/* Breadcrumbs */}
-        <Breadcrumbs 
+        <Breadcrumbs
           items={[
             { label: 'Products', href: '/products' },
             { label: product.name }
-          ]} 
+          ]}
         />
-        
+
         {/* Product Details Grid */}
         <div className="grid lg:grid-cols-2 gap-12 mb-16">
           {/* Product Image */}
@@ -85,7 +87,7 @@ export default function ProductPage({ params }: ProductPageProps) {
                 priority
               />
             </div>
-            
+
             {/* Additional images if available */}
             {product.images.length > 1 && (
               <div className="grid grid-cols-4 gap-4">
@@ -103,28 +105,28 @@ export default function ProductPage({ params }: ProductPageProps) {
               </div>
             )}
           </div>
-          
+
           {/* Product Info */}
           <div className="flex flex-col">
             <h1 className="text-4xl font-bold text-text-light dark:text-text-dark mb-4">
               {product.name}
             </h1>
-            
+
             <p className="text-lg text-text-muted-light dark:text-text-muted-dark mb-4">
               Part Number: <span className="font-semibold">{product.partNumber}</span>
             </p>
-            
+
             {/* Stock Status Badge */}
             <div className="mb-6">
               <span className={`inline-flex items-center gap-2 px-4 py-2 rounded-lg font-semibold ${stockStatusClass}`}>
                 <span className="material-symbols-outlined text-sm">
-                  {product.stockStatus === 'in-stock' ? 'check_circle' : 
-                   product.stockStatus === 'on-request' ? 'schedule' : 'cancel'}
+                  {product.stockStatus === 'in-stock' ? 'check_circle' :
+                    product.stockStatus === 'on-request' ? 'schedule' : 'cancel'}
                 </span>
                 {stockStatusText}
               </span>
             </div>
-            
+
             {/* Price */}
             <div className="mb-8">
               {product.price.type === 'fixed' && product.price.amount ? (
@@ -137,7 +139,7 @@ export default function ProductPage({ params }: ProductPageProps) {
                 </p>
               )}
             </div>
-            
+
             {/* Description */}
             <div className="mb-8">
               <h3 className="text-lg font-semibold text-text-light dark:text-text-dark mb-2">
@@ -147,7 +149,7 @@ export default function ProductPage({ params }: ProductPageProps) {
                 {product.description}
               </p>
             </div>
-            
+
             {/* Brand */}
             {product.brand && (
               <div className="mb-6">
@@ -156,7 +158,7 @@ export default function ProductPage({ params }: ProductPageProps) {
                 </p>
               </div>
             )}
-            
+
             {/* Quantity Selector & Add to Cart */}
             {product.stockStatus !== 'out-of-stock' && (
               <div className="flex flex-col sm:flex-row gap-4 mb-8">
@@ -183,7 +185,7 @@ export default function ProductPage({ params }: ProductPageProps) {
                     </button>
                   </div>
                 </div>
-                
+
                 {/* Add to Cart Button */}
                 <button
                   onClick={handleAddToCart}
@@ -194,7 +196,7 @@ export default function ProductPage({ params }: ProductPageProps) {
                 </button>
               </div>
             )}
-            
+
             {/* Request Quote Button for out of stock */}
             {product.stockStatus === 'out-of-stock' && (
               <Link href="/contact">
@@ -203,7 +205,7 @@ export default function ProductPage({ params }: ProductPageProps) {
                 </button>
               </Link>
             )}
-            
+
             {/* Quick Actions */}
             <div className="flex gap-4">
               <Link href="/cart" className="flex-1">
@@ -219,7 +221,7 @@ export default function ProductPage({ params }: ProductPageProps) {
             </div>
           </div>
         </div>
-        
+
         {/* Specifications */}
         {product.specifications && product.specifications.length > 0 && (
           <section className="mb-16">
@@ -230,7 +232,7 @@ export default function ProductPage({ params }: ProductPageProps) {
               <table className="w-full">
                 <tbody>
                   {product.specifications.map((spec, index) => (
-                    <tr 
+                    <tr
                       key={index}
                       className={index % 2 === 0 ? 'bg-gray-50 dark:bg-gray-800/50' : ''}
                     >
@@ -247,7 +249,7 @@ export default function ProductPage({ params }: ProductPageProps) {
             </div>
           </section>
         )}
-        
+
         {/* Compatibility */}
         {product.compatibility && product.compatibility.length > 0 && (
           <section className="mb-16">

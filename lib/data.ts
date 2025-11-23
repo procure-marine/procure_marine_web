@@ -28,7 +28,7 @@ export function getCategoryBySlug(slug: string): Category | undefined {
     if (category.slug === slug) {
       return category;
     }
-    
+
     // Search in subcategories
     if (category.subcategories) {
       const subcategory = category.subcategories.find(sub => sub.slug === slug);
@@ -37,7 +37,7 @@ export function getCategoryBySlug(slug: string): Category | undefined {
       }
     }
   }
-  
+
   return undefined;
 }
 
@@ -49,14 +49,14 @@ export function getCategoryBySlug(slug: string): Category | undefined {
  */
 export function getCategoryWithSubcategoryIds(categoryId: string): string[] {
   const ids: string[] = [categoryId];
-  
+
   const category = (categoriesData as Category[]).find(cat => cat.id === categoryId);
   if (category?.subcategories) {
     category.subcategories.forEach(sub => {
       ids.push(sub.id);
     });
   }
-  
+
   return ids;
 }
 
@@ -104,7 +104,7 @@ export function getFeaturedProducts(limit: number = 6): Product[] {
  */
 export function filterProducts(filters: ProductFilters): Product[] {
   let products = getAllProducts();
-  
+
   // Filter by categories (including subcategories)
   if (filters.categoryIds && filters.categoryIds.length > 0) {
     // Expand category IDs to include subcategories
@@ -112,36 +112,36 @@ export function filterProducts(filters: ProductFilters): Product[] {
     filters.categoryIds.forEach(catId => {
       expandedCategoryIds.push(...getCategoryWithSubcategoryIds(catId));
     });
-    
-    products = products.filter(product => 
+
+    products = products.filter(product =>
       product.categoryIds.some(catId => expandedCategoryIds.includes(catId))
     );
   }
-  
+
   // Filter by brands
   if (filters.brands && filters.brands.length > 0) {
-    products = products.filter(product => 
+    products = products.filter(product =>
       product.brand && filters.brands!.includes(product.brand)
     );
   }
-  
+
   // Filter by stock status
   if (filters.stockStatus && filters.stockStatus.length > 0) {
-    products = products.filter(product => 
+    products = products.filter(product =>
       filters.stockStatus!.includes(product.stockStatus)
     );
   }
-  
+
   // Filter by search query (searches in name, part number, and description)
   if (filters.searchQuery && filters.searchQuery.trim() !== '') {
     const query = filters.searchQuery.toLowerCase().trim();
-    products = products.filter(product => 
+    products = products.filter(product =>
       product.name.toLowerCase().includes(query) ||
       product.partNumber.toLowerCase().includes(query) ||
       product.description.toLowerCase().includes(query)
     );
   }
-  
+
   return products;
 }
 
@@ -153,22 +153,22 @@ export function filterProducts(filters: ProductFilters): Product[] {
  */
 export function sortProducts(products: Product[], sortOption: ProductSortOption): Product[] {
   const sorted = [...products]; // Create a copy to avoid mutating the original array
-  
+
   switch (sortOption) {
     case 'name-asc':
       return sorted.sort((a, b) => a.name.localeCompare(b.name));
-    
+
     case 'name-desc':
       return sorted.sort((a, b) => b.name.localeCompare(a.name));
-    
+
     case 'part-number':
       return sorted.sort((a, b) => a.partNumber.localeCompare(b.partNumber));
-    
+
     case 'availability':
-      // Sort by stock status: in-stock first, then on-request, then out-of-stock
-      const statusOrder = { 'in-stock': 0, 'on-request': 1, 'out-of-stock': 2 };
+      // Sort by stock status: in-stock first, then on-request, then low-stock, then out-of-stock
+      const statusOrder = { 'in-stock': 0, 'on-request': 1, 'low-stock': 2, 'out-of-stock': 3 };
       return sorted.sort((a, b) => statusOrder[a.stockStatus] - statusOrder[b.stockStatus]);
-    
+
     default:
       return sorted;
   }
@@ -180,13 +180,13 @@ export function sortProducts(products: Product[], sortOption: ProductSortOption)
  */
 export function getAllBrands(): string[] {
   const brands = new Set<string>();
-  
+
   (productsData as Product[]).forEach(product => {
     if (product.brand) {
       brands.add(product.brand);
     }
   });
-  
+
   return Array.from(brands).sort();
 }
 
@@ -201,13 +201,13 @@ export function getProductsByCategory(categorySlug: string, limit?: number): Pro
   if (!category) {
     return [];
   }
-  
+
   const categoryIds = getCategoryWithSubcategoryIds(category.id);
   let products = filterProducts({ categoryIds });
-  
+
   if (limit) {
     products = products.slice(0, limit);
   }
-  
+
   return products;
 }
