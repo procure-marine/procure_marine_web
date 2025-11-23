@@ -1,0 +1,82 @@
+
+[
+  {
+    "id": "spare-parts",
+    "name": "Spare Parts",
+    "slug": "spare-parts",
+    "description": "High-quality spare parts for all your vessel's needs",
+    "subcategories": [
+      {
+        "id": "engine-components",
+        "name": "Engine Components",
+        "slug": "engine-components",
+        "description": "Engine parts and components"
+      },
+      {
+        "id": "fuel-systems",
+        "name": "Fuel Systems",
+        "slug": "fuel-systems",
+        "description": "Fuel filters, pumps, and related components"
+      },
+      {
+        "id": "navigation-equipment",
+        "name": "Navigation Equipment",
+        "slug": "navigation-equipment",
+        "description": "GPS, chartplotters, and navigation systems"
+      }
+    ]
+  },
+  {
+    "id": "safety-equipment",
+    "name": "Safety Equipment",
+    "slug": "safety-equipment",
+    "description": "Certified safety equipment to ensure compliance and crew safety",
+    "subcategories": [
+      {
+        "id": "life-saving",
+        "name": "Life Saving",
+        "slug": "life-saving",
+        "description": "Life rafts, lifejackets, and emergency equipment"
+      },
+      {
+        "id": "fire-fighting",
+        "name": "Fire Fighting",
+        "slug": "fire-fighting",
+        "description": "Fire extinguishers and fire safety equipment"
+      },
+      {
+        "id": "emergency-signals",
+        "name": "Emergency Signals",
+        "slug": "emergency-signals",
+        "description": "EPIRBs, flares, and distress signals"
+      }
+    ]
+  },
+  {
+    "id": "deck-equipment",
+    "name": "Deck Equipment",
+    "slug": "deck-equipment",
+    "description": "Anchors, chains, ropes, and deck hardware",
+    "subcategories": [
+      {
+        "id": "anchoring",
+        "name": "Anchoring",
+        "slug": "anchoring",
+        "description": "Anchors and anchor chains"
+      },
+      {
+        "id": "mooring",
+        "name": "Mooring",
+        "slug": "mooring",
+        "description": "Mooring ropes and fenders"
+      }
+    ]
+  },
+  {
+    "id": "communication",
+    "name": "Communication",
+    "slug": "communication",
+    "description": "VHF radios and communication equipment",
+    "subcategories": []
+  }
+]

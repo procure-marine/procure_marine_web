@@ -1,0 +1,312 @@
+
+[
+  {
+    "id": "prod-001",
+    "name": "Marine Fire Extinguisher - 5kg CO2",
+    "slug": "marine-fire-extinguisher-5kg-co2",
+    "partNumber": "SFE-CO2-5KG",
+    "description": "SOLAS-approved CO2 fire extinguisher for marine use",
+    "fullDescription": "High-quality 5kg CO2 fire extinguisher designed specifically for marine environments. Fully compliant with SOLAS regulations and MED certified. Suitable for Class B and C fires.",
+    "categoryIds": ["safety-equipment", "fire-fighting"],
+    "brand": "SafeMarine",
+    "price": {
+      "type": "fixed",
+      "amount": 450,
+      "currency": "USD"
+    },
+    "stockStatus": "in-stock",
+    "images": [
+      "https://lh3.googleusercontent.com/aida-public/AB6AXuBiGTq8IS3FIZ3bU1L0-TTst_lAAcmu4tpzwikqu_TKkZIKijLojV1gFOei5zDZCzNCb8qD-iKqO1xUcmKbzLzjTwWk5ax1h6Ol4sOVPACGFHPZdyPCpnR7XMl6R0NJi4pEta3LU_QpWTzrifOJuqAZxN3CIbyzQ1-c3kXfoweYYvZbEJLHrRGKjtAXXZo3UCZsiS6B4_UB0XyI4YDniVspqvUkppiE_thHUR1tzAWuR9QIEMVxknMYs8_bVQrVoPxLyny2SvcQDV8"
+    ],
+    "specifications": [
+      { "label": "Weight", "value": "5kg" },
+      { "label": "Type", "value": "CO2" },
+      { "label": "Certification", "value": "SOLAS/MED" },
+      { "label": "Fire Class", "value": "B, C" }
+    ],
+    "featured": true
+  },
+  {
+    "id": "prod-002",
+    "name": "Automatic Inflatable Lifejacket 165N",
+    "slug": "automatic-inflatable-lifejacket-165n",
+    "partNumber": "AILJ-165N-AUTO",
+    "description": "Automatic inflatable lifejacket with 165N buoyancy",
+    "fullDescription": "Premium automatic inflatable lifejacket providing 165N buoyancy. Features automatic inflation upon water immersion and manual backup. SOLAS approved for commercial vessels.",
+    "categoryIds": ["safety-equipment", "life-saving"],
+    "brand": "LifeGuard Pro",
+    "price": {
+      "type": "fixed",
+      "amount": 180,
+      "currency": "USD"
+    },
+    "stockStatus": "in-stock",
+    "images": [
+      "https://lh3.googleusercontent.com/aida-public/AB6AXuDawsf8rNE_pPf7g63tYkv4ZfE6jhnlSR6SUmWjbEVHusnIww-OGS-T7MtKAPH5oPHeKUVKjlSrXx4qKuoYwVZMGMY5L8f0c8mEVGNdMM_NNQrnfRd6l-kbd1XYKhPtjQZIHBAaMu6N3vuwfw1opfHB6SfvpfQ7-_NPrctEK0b-bQ6rMuljBSH0xU25zHmBEGxaohNMbI-6tsyCE88QcyT2O6N5Bv0J7pya7jBo4l3e78TmdG0hVVqZlfPKjb5bNv29cgI94DBvKSY"
+    ],
+    "specifications": [
+      { "label": "Buoyancy", "value": "165N" },
+      { "label": "Inflation", "value": "Automatic/Manual" },
+      { "label": "Certification", "value": "SOLAS/MED" }
+    ],
+    "featured": true
+  },
+  {
+    "id": "prod-003",
+    "name": "LED Navigation Light - Port Side",
+    "slug": "led-navigation-light-port-side",
+    "partNumber": "NVL-LED-PORT-RD",
+    "description": "Energy-efficient LED navigation light for port side",
+    "fullDescription": "High-visibility LED navigation light designed for port side mounting. Energy-efficient LED technology with long service life. Meets COLREG requirements.",
+    "categoryIds": ["spare-parts", "navigation-equipment"],
+    "brand": "NavTech",
+    "price": {
+      "type": "on-request"
+    },
+    "stockStatus": "on-request",
+    "images": [
+      "https://lh3.googleusercontent.com/aida-public/AB6AXuDHI7m9Qsn0075qu2eScoIe8ndwqN_H7UER66FXtAZ_-EVPmVMLT3GPx8HHSJJuT3o58rHwHCsw7R7zQ3RJE6uQM52QWXWMN80S5aaMvaDICJaV_jPLALlVak0H_DTtgqjE9DNZlfqrysjrryyLqNp0lSBJ_5XJcIUOfMeGfROTdzR8iA55Uy5owiZy3t-jt5bFmSsS-otwbFlv5czj2EfZjvMMetsHQkm6jO-RkApAoylK94nOypHWI_fK6iqhnZ3_GtN2DWJ_TKw"
+    ],
+    "specifications": [
+      { "label": "Type", "value": "LED" },
+      { "label": "Side", "value": "Port (Red)" },
+      { "label": "Voltage", "value": "12-24V DC" },
+      { "label": "Visibility", "value": "2 nautical miles" }
+    ]
+  },
+  {
+    "id": "prod-004",
+    "name": "Marine GPS Chartplotter X12",
+    "slug": "marine-gps-chartplotter-x12",
+    "partNumber": "GPS-X12-PRO",
+    "description": "Advanced GPS chartplotter with 12-inch display",
+    "fullDescription": "Professional-grade GPS chartplotter featuring a bright 12-inch touchscreen display, preloaded charts, and advanced navigation features including AIS integration.",
+    "categoryIds": ["spare-parts", "navigation-equipment"],
+    "brand": "MarineNav",
+    "price": {
+      "type": "fixed",
+      "amount": 2850,
+      "currency": "USD"
+    },
+    "stockStatus": "in-stock",
+    "images": [
+      "https://lh3.googleusercontent.com/aida-public/AB6AXuA2ond1lmTvjidaY9XypPPxs6h1Bk1BYjCzYNrtQD8qbV9jNZQhWxcZqEKHMyMwycZRo07o3W8v2OVIMfAPsPCxUWlQwyIaKKXzA7fHvheWb_Ns0o613RB1JIQijiG18pyN98O4vSJrWmNcCmnNLL1GnJIVmu3Iw7aonq8m8R1oCFXx94EEtsRFAL0euh0DpNJMv6QLGJs3fF5_0D2p_eBoIwptxD26QHxDgr12EmhSacCPHRh3vlzL2j6NWbK1ikGil0J7yzXI-sw"
+    ],
+    "specifications": [
+      { "label": "Screen Size", "value": "12 inches" },
+      { "label": "Resolution", "value": "1920x1080" },
+      { "label": "GPS", "value": "Multi-GNSS" },
+      { "label": "Features", "value": "AIS, Radar compatible" }
+    ],
+    "featured": true
+  },
+  {
+    "id": "prod-005",
+    "name": "VHF Marine Radio Transceiver",
+    "slug": "vhf-marine-radio-transceiver",
+    "partNumber": "VHF-TRX-25W",
+    "description": "25W VHF radio with DSC and GPS",
+    "fullDescription": "Professional VHF marine radio transceiver with 25W output power, integrated DSC (Digital Selective Calling), and GPS receiver. All international channels included.",
+    "categoryIds": ["communication"],
+    "brand": "CommMarine",
+    "price": {
+      "type": "fixed",
+      "amount": 380,
+      "currency": "USD"
+    },
+    "stockStatus": "in-stock",
+    "images": [
+      "https://lh3.googleusercontent.com/aida-public/AB6AXuDmCVp_wM3dzylsMzpogi2xE8jkgXdPab4koLzcP7LXOXlBRDVRPh3V0fI2keKKAjcYXNaRcfLCtgAzZBd7Ky72scIZVgeLM19Wo2M13EfVGwD8PneKVz8IMErQnDsK7IoPoq_aQZZxZ4N6oiaMlQ8r1ksvv3KYm_kEnCdWYk5zIq7XqsbOsy8aGfKxYGoegKe5CKlWyRT5BW52p0T_NQ_I7VXqsgeqQ_zJDCJ1R6DcjkZa5V6rkBRkHiQdGRVZQkQxDd0644idP88"
+    ],
+    "specifications": [
+      { "label": "Power Output", "value": "25W" },
+      { "label": "Channels", "value": "All international" },
+      { "label": "DSC", "value": "Class D" },
+      { "label": "GPS", "value": "Integrated" }
+    ]
+  },
+  {
+    "id": "prod-006",
+    "name": "Diesel Engine Fuel Filter",
+    "slug": "diesel-engine-fuel-filter",
+    "partNumber": "DFF-SPN-10M",
+    "description": "High-efficiency fuel filter for marine diesel engines",
+    "fullDescription": "Premium fuel filter designed for marine diesel engines. Features high-efficiency filtration to protect fuel injection systems. Suitable for engines up to 500HP.",
+    "categoryIds": ["spare-parts", "engine-components", "fuel-systems"],
+    "brand": "EnginePro",
+    "price": {
+      "type": "fixed",
+      "amount": 85,
+      "currency": "USD"
+    },
+    "stockStatus": "in-stock",
+    "images": [
+      "https://lh3.googleusercontent.com/aida-public/AB6AXuAjaSvNIZVcZM8jiu-MosWhAyiJCCI7Ms57Fol_0gUC8mLk2bsOAXNho6uZx215Kx8lAU-qMh4TB3MQ2IgZDiU70HcQ2CAe5VlrJyhaTDJhcyZiH3pthVkyUQuzQQYwTuqd28PkzrQPKR2hHWQv1h-wD_01f8fyqjRU0PeSQdgEZ-GTpuqAFEnj2ShQHWksH_Z3ysnWU5LzpjBVi1uUbqSe-rlT0JRHRHQ5wKxfoh-0D05hNquBbJAqHRMBcd22BdizR3BwDrkhL0U"
+    ],
+    "specifications": [
+      { "label": "Filtration", "value": "10 micron" },
+      { "label": "Flow Rate", "value": "150 L/h" },
+      { "label": "Max Pressure", "value": "6 bar" },
+      { "label": "Compatibility", "value": "Up to 500HP engines" }
+    ]
+  },
+  {
+    "id": "prod-007",
+    "name": "6-Person Coastal Life Raft",
+    "slug": "6-person-coastal-life-raft",
+    "partNumber": "CLR-6P-VAL",
+    "description": "Compact life raft for coastal navigation",
+    "fullDescription": "Coastal life raft designed for 6 persons. Compact valise pack for easy storage. Includes basic survival equipment. Suitable for vessels operating within 50 miles of shore.",
+    "categoryIds": ["safety-equipment", "life-saving"],
+    "brand": "CoastalSafe",
+    "price": {
+      "type": "on-request"
+    },
+    "stockStatus": "on-request",
+    "images": [
+      "https://lh3.googleusercontent.com/aida-public/AB6AXuAoztuk-wQuSzTrwn_x4PwtWsvS7lmAW3QKp-yaxG7ETnW4XCHfzRyD0HeqI-GyzQ0U1vStNehYEDVYSYvDKoihFy_A_v5YmUXS4p6vMf2BXi1w_ltRyJXP6Sq6s8ETtAIkuUbN5-r9Yyuav5BEqSYxqS2MNHU2mkNRTEuB-ysfyqDL1ousvWOPTiuHE_3nA0TJ34BUYaMsuR_U3WJfr7SIaWAQcsVZmO5zgXqVMTscote3imb8h6P61jRq4qSH6qdyhGOunjnZVqs"
+    ],
+    "specifications": [
+      { "label": "Capacity", "value": "6 persons" },
+      { "label": "Pack Type", "value": "Valise" },
+      { "label": "Service Area", "value": "Coastal (50nm)" },
+      { "label": "Service Interval", "value": "Annual" }
+    ]
+  },
+  {
+    "id": "prod-008",
+    "name": "Emergency Position Radio Beacon (EPIRB)",
+    "slug": "emergency-position-radio-beacon-epirb",
+    "partNumber": "EPIRB-G8-AUTO",
+    "description": "406 MHz EPIRB with GPS and automatic activation",
+    "fullDescription": "Category 1 EPIRB with 406 MHz transmission and integrated GPS. Automatic float-free activation in emergency situations. 48-hour battery life. COSPAS-SARSAT approved.",
+    "categoryIds": ["safety-equipment", "emergency-signals"],
+    "brand": "EmergencyTech",
+    "price": {
+      "type": "fixed",
+      "amount": 650,
+      "currency": "USD"
+    },
+    "stockStatus": "in-stock",
+    "images": [
+      "https://lh3.googleusercontent.com/aida-public/AB6AXuDLyfGGh1ks3dNF0XMoCh_5sLO-oR7_jTTIJ4WHvZbf9Zg-Hk_Fz1HSf-mbTiP08HXQ5LyTiwpZqWlES_iewA3Q-LJ65tc1U8Qpo4s5WZCnEDyM38tQrFJ0HNB0VALfiCzW0Mzupuu-AT-4A1aQtWupNF1O63fN0rJ0BO60T2ru6LuxxqrBhSR--MQ9u4b8Ccvd6zfPej42LKsobgluPcF5qz5cbQ2NNjIkbiCu3kHeQ1o3qTnMRLZhuhWbt3kpwZt_KScYLyIPa7s"
+    ],
+    "specifications": [
+      { "label": "Frequency", "value": "406 MHz" },
+      { "label": "GPS", "value": "Integrated" },
+      { "label": "Category", "value": "1 (Auto float-free)" },
+      { "label": "Battery Life", "value": "48 hours" },
+      { "label": "Certification", "value": "COSPAS-SARSAT" }
+    ]
+  },
+  {
+    "id": "prod-009",
+    "name": "Heavy-Duty Mooring Rope - 20m",
+    "slug": "heavy-duty-mooring-rope-20m",
+    "partNumber": "MR-HD-20M18",
+    "description": "18mm diameter nylon mooring rope, 20 meters",
+    "fullDescription": "Professional-grade nylon mooring rope with 18mm diameter and 20-meter length. High breaking strength and excellent shock absorption. UV-resistant for long service life.",
+    "categoryIds": ["deck-equipment", "mooring"],
+    "brand": "DeckMaster",
+    "price": {
+      "type": "fixed",
+      "amount": 120,
+      "currency": "USD"
+    },
+    "stockStatus": "in-stock",
+    "images": [
+      "https://lh3.googleusercontent.com/aida-public/AB6AXuBe6DnGvI9ddjXMePfhN2x8-tPFbCjKpi51wT02Z5yNK2EG3nJWEtX76kumE1iGw4HIoEdO1n-7mxzBaoJzkhSpHG4ZlzsmbKe6tvBHYwomMw40aVou8H4TCRen5AyRZRzk2jPWx1UIDQyzcLbLWHXOj2jJTXbupSrh3BAiMQGylaMg50te_hPj3IrD6yxgFiJP93fgixUMWHPKtG-wCo86yYhSffLI3HIHrZsa66CI_DWs0CTN1o8Rb60j_1hTOpt3QhjGYlyvKAI"
+    ],
+    "specifications": [
+      { "label": "Material", "value": "Nylon" },
+      { "label": "Diameter", "value": "18mm" },
+      { "label": "Length", "value": "20 meters" },
+      { "label": "Breaking Strength", "value": "4500 kg" }
+    ]
+  },
+  {
+    "id": "prod-010",
+    "name": "OceanMaster SOLAS Life Raft (12 Person)",
+    "slug": "oceanmaster-solas-life-raft-12-person",
+    "partNumber": "OM-LR-12S",
+    "description": "SOLAS-approved life raft for 12 persons",
+    "fullDescription": "The OceanMaster SOLAS Life Raft is engineered for reliability and performance in the most challenging marine environments. Approved by SOLAS/MED, it meets all requirements for commercial vessels operating internationally. Its durable construction, high-visibility canopy, and comprehensive survival pack make it an essential piece of safety equipment for any professional maritime operation.",
+    "categoryIds": ["safety-equipment", "life-saving"],
+    "brand": "OceanMaster",
+    "price": {
+      "type": "on-request"
+    },
+    "stockStatus": "in-stock",
+    "images": [
+      "https://lh3.googleusercontent.com/aida-public/AB6AXuDjyxTRpYhnu2kxDXFXzknKcjNc59ngKEGjxi1Z1rJB8jBPlUyKqE541x_vxb88egu5T9lo9ALKmn36WP40Ac0-CfcgxmIqOyMWKjPEDBLIo8Nfrzl5faI_GvPaPb0hwNtdw1TMpOQinpj2P2Ti4owu4CfHClE2FlmtytnaXhtade-XRN3BczjpdWOafHR-DLg3UN8ldQ4aQUb0K0C7sJucpfWDXjYVRcFbHME2d2S2pDd4SrsXcR-K0UFViEz28lR04R6Xs05BwFQ",
+      "https://lh3.googleusercontent.com/aida-public/AB6AXuDuAucZusedfr2FO9nytobfEc9APSWmKvhZ9avqYyA9hiDIiNpQzDGV3er0-CHAcmVKCToQeCiFbg7tWDjvbYwOUFWy0uFTeLv0pzZL5leUUGTL6Cl2wfIS466brEXmZizeTVpivYzM2IV2tNvJnyNNdnPiyGHQXHmJwky8IBaVx4VkjjI12Es3gpGXwuHPSHvlgsQkLQM8GgRZZwGc4xZ_UfbK4v6zbn2HnPvAUb6Cye9DCr91PyKmAb60hH_MEPHv-wPwvKXb85M",
+      "https://lh3.googleusercontent.com/aida-public/AB6AXuA7kcREIXjpL9SKvOmh1x5n6AdjLN7UcGCz6a32YXBtqor7g7BkCzGcjqgXC5Uw2mlwT6gLSZiRo6eZ-tdM4gr9iD0Ao4vi0QCw8XO1Y0n1zW0-nyDZR9o5uf42c6tp-SMg725MDAsfjnCB2ZTjcuknrxCz7QUk0mgXTCb-6eDBBQQ_ZUirNW2DL-oBGuFy3WA6iuvLR0no0IFRzkFuKWj722kYAR9qZk_NZdFq-qSROwq50_sOHnL0kr9fr1BPySMXUWd-46tASzs",
+      "https://lh3.googleusercontent.com/aida-public/AB6AXuADHpYqcIaFuXSXQh4Psu7w_TzcbqYQWybCxzf7Y2C_d_Mnadb_ZWxGUjeSsZapBb9ANVCYcyRvc81sGuVsCW78IfriegTjVBS6osdDtfOp3Lkp_jFdpZOA6PdwvAvu4Z8rBHJKFPkLBulaVpAZfwZdODoEQrKI7M368kFXLLvjs1brpFOSJ5mXeilbJb23EYsYMMM_8pDPOHw4sQn-MLQDzd625JTfhCFa29XlzpHZZqhiEendeGpyJGlmyRK1vl53unYPSlQ3QGw"
+    ],
+    "specifications": [
+      { "label": "Capacity", "value": "12 persons" },
+      { "label": "Certification", "value": "SOLAS 74/96, MED" },
+      { "label": "Canopy", "value": "High-visibility orange with reflective tape" },
+      { "label": "Floor", "value": "Insulated for thermal protection" },
+      { "label": "Emergency Pack", "value": "SOLAS 'A' pack included" },
+      { "label": "Deployment", "value": "Davit-launch or throw-overboard" }
+    ],
+    "compatibility": [
+      "Suitable for all commercial vessels",
+      "Offshore and coastal operations",
+      "Davit-launch systems",
+      "Throw-overboard deployment"
+    ],
+    "featured": true
+  },
+  {
+    "id": "prod-011",
+    "name": "Propeller Shaft Seal",
+    "slug": "propeller-shaft-seal",
+    "partNumber": "PSS-102A",
+    "description": "Dripless propeller shaft seal system",
+    "fullDescription": "Advanced dripless shaft seal system that eliminates the need for traditional packing glands. Maintenance-free operation with superior sealing performance.",
+    "categoryIds": ["spare-parts", "engine-components"],
+    "brand": "ShaftTech",
+    "price": {
+      "type": "fixed",
+      "amount": 250,
+      "currency": "USD"
+    },
+    "stockStatus": "in-stock",
+    "images": [
+      "https://lh3.googleusercontent.com/aida-public/AB6AXuClFm5Hfdbsjk8AfWv2XcWD1hrw19KL9-9oQNxCLUDIm4_6k0w2CfZNZvNOIh3QsjdYiD2-qJoMgbKPfiH_f-3n9lKxod2THmjwarXfBsp9XYgQjfPWLHGRKq-RqJNFao82gxmjo7lg7L5tXEIdoLQB4A673UuUethE3UsoUPeKFWtDjAtail0iBvhMUxsTOj98kyLbpon3t4rcJbO0C-FFhDXNAVeqgvVk81vdnugx2B5yNyGZ8tW_IcG7i5_Yblqd3tJmhpT8U38"
+    ],
+    "specifications": [
+      { "label": "Type", "value": "Dripless" },
+      { "label": "Shaft Diameter", "value": "1-1/8 inch" },
+      { "label": "Material", "value": "Carbon/Nitrile" }
+    ]
+  },
+  {
+    "id": "prod-012",
+    "name": "Anchor Chain 10mm G43",
+    "slug": "anchor-chain-10mm-g43",
+    "partNumber": "AC-10MM-G43",
+    "description": "High-strength galvanized anchor chain",
+    "fullDescription": "Grade 43 galvanized anchor chain with 10mm link diameter. Suitable for anchors up to 25kg. Hot-dip galvanized for corrosion resistance.",
+    "categoryIds": ["deck-equipment", "anchoring"],
+    "brand": "ChainMaster",
+    "price": {
+      "type": "fixed",
+      "amount": 8.5,
+      "currency": "USD"
+    },
+    "stockStatus": "in-stock",
+    "images": [
+      "https://lh3.googleusercontent.com/aida-public/AB6AXuCiqMFNRECCPGywSNqwX0RHcr-N42qjoEfTzWSGMq7mLS17swy0gtz3i9hjkcQ2D7OjonMBR9UlrToCNr9zgwcVutX0RsWbQ5uNLYprVGb7zvaSuRTS_Pmm4anjah8mXjxL4nyK-Iw8d_DOrDtGilpyh8Thu3iMqMUje4wfxaBSO9jFfHlQzfKzffjtLukUA6TKsOOkdoZ_VMsyIjyVAuOZhv3Pl82JHHg2JoXvVxSETND96N6zELIOspHE_tdWrU2TrPhxUrOvq50"
+    ],
+    "specifications": [
+      { "label": "Grade", "value": "G43" },
+      { "label": "Link Diameter", "value": "10mm" },
+      { "label": "Finish", "value": "Hot-dip galvanized" },
+      { "label": "Working Load", "value": "1300 kg" },
+      { "label": "Price Unit", "value": "Per meter" }
+    ]
+  }
+]
