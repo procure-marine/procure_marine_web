@@ -11,16 +11,16 @@
  */
 
 import type { Metadata } from "next";
-import { Public_Sans } from "next/font/google";
+import { Outfit } from "next/font/google";
 import "./globals.css";
 import { CartProvider } from "@/components/cart/CartProvider";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 
-// Configure Public Sans font
-const publicSans = Public_Sans({
+// Configure Outfit font
+const outfit = Outfit({
   subsets: ["latin"],
-  variable: "--font-public-sans",
+  variable: "--font-outfit",
   display: "swap",
 });
 
@@ -45,18 +45,18 @@ export default function RootLayout({
           rel="stylesheet"
         />
       </head>
-      <body className={`${publicSans.variable} font-display bg-background-light dark:bg-background-dark text-text-light dark:text-text-dark`}>
+      <body className={`${outfit.variable} font-display bg-background-light dark:bg-background-dark text-text-light dark:text-text-dark`}>
         {/* Cart Provider wraps the entire app for cart state management */}
         <CartProvider>
           <div className="flex flex-col min-h-screen">
             {/* Header - sticky navigation */}
             <Header />
-            
+
             {/* Main content area */}
             <main className="flex-grow">
               {children}
             </main>
-            
+
             {/* Footer */}
             <Footer />
           </div>

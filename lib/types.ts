@@ -24,7 +24,7 @@ export interface Category {
 /**
  * Product availability status
  */
-export type StockStatus = 'in-stock' | 'on-request' | 'out-of-stock';
+export type StockStatus = 'in-stock' | 'on-request' | 'out-of-stock' | 'low-stock';
 
 /**
  * Product pricing information
@@ -67,6 +67,8 @@ export interface Product {
   fullDescription?: string;
   /** Category IDs this product belongs to */
   categoryIds: string[];
+  /** Primary category name for display */
+  category?: string;
   /** Brand/manufacturer name */
   brand?: string;
   /** Pricing information */

@@ -20,8 +20,8 @@ interface ProductCardProps {
 
 export default function ProductCard({ product }: ProductCardProps) {
   const { addToCart } = useCart();
-  const [addedToCart, setAddedToCart] = useState(false);
-  
+  const [isAdding, setIsAdding] = useState(false);
+
   // Format price
   const formatPrice = (amount: number, currency: string = 'USD') => {
     return new Intl.NumberFormat('en-US', {
@@ -29,16 +29,20 @@ export default function ProductCard({ product }: ProductCardProps) {
       currency: currency,
     }).format(amount);
   };
-  
+
   // Handle add to cart
   const handleAddToCart = (e: React.MouseEvent) => {
     e.preventDefault();
     e.stopPropagation();
-    addToCart(product, 1);
-    setAddedToCart(true);
-    setTimeout(() => setAddedToCart(false), 2000);
+    setIsAdding(true);
+
+    // Simulate network delay for better UX
+    setTimeout(() => {
+      addToCart(product, 1);
+      setIsAdding(false);
+    }, 800);
   };
-  
+
   // Format stock status for display
   const stockStatusConfig = {
     'in-stock': {
@@ -56,126 +60,116 @@ export default function ProductCard({ product }: ProductCardProps) {
       class: 'bg-red-100 dark:bg-red-900/30 text-red-700 dark:text-red-400 border-red-200 dark:border-red-800',
       icon: 'cancel'
     },
+    'low-stock': {
+      text: 'Low Stock',
+      class: 'bg-orange-100 dark:bg-orange-900/30 text-orange-700 dark:text-orange-400 border-orange-200 dark:border-orange-800',
+      icon: 'warning'
+    },
   }[product.stockStatus];
-  
+
   const isPriceOnRequest = product.price.type === 'on-request';
   const isOutOfStock = product.stockStatus === 'out-of-stock';
-  
+  const isLowStock = product.stockStatus === 'low-stock'; // Assuming 'low-stock' is a new possible status
+
   return (
-    <div className="flex flex-col bg-white dark:bg-card-dark rounded-2xl border border-gray-200 dark:border-gray-700 overflow-hidden group hover:shadow-2xl hover:shadow-primary/10 dark:hover:shadow-secondary/10 transition-all duration-300 hover:-translate-y-1">
-      {/* Product Image with Badge */}
-      <div className="w-full aspect-square bg-gray-100 dark:bg-gray-800 relative overflow-hidden cursor-pointer" onClick={() => window.location.href = `/products/${product.slug}`}>
+    <div className="group relative bg-white dark:bg-card-dark rounded-3xl border border-gray-100 dark:border-gray-800 overflow-hidden hover:shadow-2xl hover:shadow-primary/10 dark:hover:shadow-black/40 transition-all duration-500 hover:-translate-y-2 flex flex-col h-full">
+      {/* Image Container */}
+      <div className="relative aspect-[4/3] overflow-hidden bg-gray-100 dark:bg-gray-800">
         <Image
-          src={product.images[0]}
+          src={product.images[0]} // Changed from product.image to product.images[0] to match existing Product type
           alt={product.name}
           fill
-          className="object-cover group-hover:scale-110 transition-transform duration-500"
+          className="object-cover transition-transform duration-700 group-hover:scale-110"
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
         />
-        
-        {/* Stock Status Badge */}
-        <div className="absolute top-3 right-3">
-          <span className={`inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-semibold border backdrop-blur-sm ${stockStatusConfig.class}`}>
-            <span className="material-symbols-outlined text-sm">
-              {stockStatusConfig.icon}
-            </span>
-            {stockStatusConfig.text}
+
+        {/* Overlay Gradient */}
+        <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+
+        {/* Stock Badge */}
+        <div className="absolute top-4 left-4 z-10">
+          <span className={`inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold backdrop-blur-md shadow-sm ${isOutOfStock
+            ? 'bg-red-500/90 text-white'
+            : isLowStock
+              ? 'bg-warning/90 text-white'
+              : 'bg-success/90 text-white'
+            }`}>
+            <span className={`w-1.5 h-1.5 rounded-full ${isOutOfStock ? 'bg-white' : 'bg-white animate-pulse'}`}></span>
+            {isOutOfStock ? 'Out of Stock' : isLowStock ? 'Low Stock' : 'In Stock'}
           </span>
         </div>
-        
-        {/* Hover Overlay */}
-        <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/0 to-black/0 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-      </div>
-      
-      {/* Product Info */}
-      <div className="p-5 flex flex-col flex-grow">
-        {/* Product Name */}
-        <Link href={`/products/${product.slug}`}>
-          <h3 className="text-lg font-bold text-text-light dark:text-text-dark leading-tight mb-2 group-hover:text-primary dark:group-hover:text-secondary transition-colors line-clamp-2 min-h-[3.5rem]">
-            {product.name}
-          </h3>
-        </Link>
-        
-        {/* Part Number */}
-        <div className="flex items-center gap-2 mb-3">
-          <span className="material-symbols-outlined text-text-muted-light dark:text-text-muted-dark text-sm">
-            tag
-          </span>
-          <p className="text-text-muted-light dark:text-text-muted-dark text-sm font-medium">
-            {product.partNumber}
-          </p>
-        </div>
-        
-        {/* Brand (if available) */}
-        {product.brand && (
-          <div className="flex items-center gap-2 mb-3">
-            <span className="material-symbols-outlined text-text-muted-light dark:text-text-muted-dark text-sm">
-              business
-            </span>
-            <p className="text-text-muted-light dark:text-text-muted-dark text-sm">
-              {product.brand}
-            </p>
-          </div>
-        )}
-        
-        {/* Price */}
-        <div className="mb-4 mt-auto">
-          {isPriceOnRequest ? (
-            <div className="flex items-center gap-2">
-              <span className="material-symbols-outlined text-accent-orange">
-                request_quote
-              </span>
-              <p className="text-lg font-bold text-accent-orange">
-                Price on Request
-              </p>
-            </div>
-          ) : (
-            <p className="text-2xl font-bold text-primary dark:text-secondary">
-              {formatPrice(product.price.amount!, product.price.currency)}
-            </p>
-          )}
-        </div>
-        
-        {/* Action Buttons */}
-        <div className="flex gap-2">
-          {/* View Details Button */}
+
+        {/* Quick Actions (Visible on Hover) */}
+        <div className="absolute bottom-4 left-0 right-0 px-4 translate-y-full group-hover:translate-y-0 transition-transform duration-500 flex gap-2">
           <Link href={`/products/${product.slug}`} className="flex-1">
-            <button className="w-full border-2 border-primary dark:border-secondary text-primary dark:text-secondary px-4 py-2.5 rounded-lg font-semibold hover:bg-primary dark:hover:bg-secondary hover:text-white dark:hover:text-deep-navy transition-all duration-200 flex items-center justify-center gap-2 group/btn">
-              <span className="material-symbols-outlined text-sm group-hover/btn:rotate-12 transition-transform">
-                visibility
-              </span>
-              <span className="text-sm">Details</span>
+            <button className="w-full bg-white/95 backdrop-blur text-primary text-sm font-bold py-2.5 rounded-xl hover:bg-primary hover:text-white transition-all shadow-lg flex items-center justify-center gap-2">
+              View Details
             </button>
           </Link>
-          
-          {/* Add to Cart Button */}
-          {!isOutOfStock && (
+        </div>
+      </div>
+
+      {/* Content */}
+      <div className="p-6 flex flex-col flex-grow gap-4">
+        <div className="flex-grow space-y-2">
+          {/* Assuming product.category exists, otherwise remove or adapt */}
+          {product.category && <div className="text-xs font-bold text-primary uppercase tracking-wider">{product.category}</div>}
+          <Link href={`/products/${product.slug}`} className="block group-hover:text-primary transition-colors">
+            <h3 className="text-xl font-bold text-text-primary dark:text-white leading-tight line-clamp-2">
+              {product.name}
+            </h3>
+          </Link>
+          <p className="text-sm text-text-secondary dark:text-gray-400 font-medium">
+            Part No: <span className="text-text-primary dark:text-gray-300 font-mono">{product.partNumber}</span>
+          </p>
+        </div>
+
+        <div className="pt-4 border-t border-gray-100 dark:border-gray-800 flex items-center justify-between gap-4 mt-auto">
+          <div className="flex flex-col">
+            <span className="text-xs text-text-muted dark:text-gray-500 font-medium">Price</span>
+            {/* Adapted price display to match original Product type structure */}
+            {!isPriceOnRequest ? (
+              <p className="text-xl font-black text-primary">
+                {formatPrice(product.price.amount!, product.price.currency)}
+              </p>
+            ) : (
+              <p className="text-lg font-bold text-warning dark:text-warning flex items-center gap-1">
+                <span className="material-symbols-outlined text-sm">request_quote</span>
+                On Request
+              </p>
+            )}
+          </div>
+
+          {!isOutOfStock ? (
             <button
               type="button"
               onClick={handleAddToCart}
-              className={`flex-1 px-4 py-2.5 rounded-lg font-semibold transition-all duration-200 flex items-center justify-center gap-2 group/btn ${
-                addedToCart
-                  ? 'bg-green-600 text-white'
-                  : 'bg-primary dark:bg-secondary text-white dark:text-deep-navy hover:bg-primary/90 dark:hover:bg-secondary/90 hover:shadow-lg'
-              }`}
+              disabled={isAdding}
+              className={`
+                relative overflow-hidden px-4 py-3 rounded-xl font-bold text-sm transition-all duration-300 flex items-center gap-2 shadow-lg shadow-primary/20
+                ${isAdding
+                  ? 'bg-primary/10 text-primary cursor-wait'
+                  : 'bg-primary text-white hover:bg-primary-dark hover:shadow-primary/30 hover:-translate-y-0.5 active:translate-y-0'
+                }
+              `}
             >
-              <span className="material-symbols-outlined text-sm group-hover/btn:scale-110 transition-transform">
-                {addedToCart ? 'check_circle' : 'shopping_cart'}
-              </span>
-              <span className="text-sm">
-                {addedToCart ? 'Added!' : 'Add'}
-              </span>
+              {isAdding ? (
+                <>
+                  <span className="w-4 h-4 border-2 border-primary/30 border-t-primary rounded-full animate-spin"></span>
+                  <span>Adding...</span>
+                </>
+              ) : (
+                <>
+                  <span className="material-symbols-outlined text-lg">add_shopping_cart</span>
+                  <span>Add</span>
+                </>
+              )}
             </button>
-          )}
-          
-          {/* Request Quote for Out of Stock */}
-          {isOutOfStock && (
-            <Link href="/contact" className="flex-1">
-              <button className="w-full bg-accent-orange text-deep-navy px-4 py-2.5 rounded-lg font-semibold hover:bg-accent-orange/90 transition-all duration-200 flex items-center justify-center gap-2 group/btn">
-                <span className="material-symbols-outlined text-sm">
-                  contact_support
-                </span>
-                <span className="text-sm">Request</span>
+          ) : (
+            <Link href="/contact">
+              <button className="px-4 py-3 rounded-xl font-bold text-sm bg-gray-100 dark:bg-gray-800 text-text-secondary dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors flex items-center gap-2">
+                <span className="material-symbols-outlined text-lg">mail</span>
+                Enquire
               </button>
             </Link>
           )}
