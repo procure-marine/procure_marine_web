@@ -1,4 +1,3 @@
-
 [
   {
     "id": "prod-001",
@@ -7,7 +6,7 @@
     "partNumber": "SFE-CO2-5KG",
     "description": "SOLAS-approved CO2 fire extinguisher for marine use",
     "fullDescription": "High-quality 5kg CO2 fire extinguisher designed specifically for marine environments. Fully compliant with SOLAS regulations and MED certified. Suitable for Class B and C fires.",
-    "categoryIds": ["safety-equipment", "fire-fighting"],
+    "categoryIds": ["cr-9", "cr-9-sb-3"],
     "brand": "SafeMarine",
     "price": {
       "type": "fixed",
@@ -33,7 +32,7 @@
     "partNumber": "AILJ-165N-AUTO",
     "description": "Automatic inflatable lifejacket with 165N buoyancy",
     "fullDescription": "Premium automatic inflatable lifejacket providing 165N buoyancy. Features automatic inflation upon water immersion and manual backup. SOLAS approved for commercial vessels.",
-    "categoryIds": ["safety-equipment", "life-saving"],
+    "categoryIds": ["cr-9", "cr-9-sb-1"],
     "brand": "LifeGuard Pro",
     "price": {
       "type": "fixed",
@@ -58,7 +57,7 @@
     "partNumber": "NVL-LED-PORT-RD",
     "description": "Energy-efficient LED navigation light for port side",
     "fullDescription": "High-visibility LED navigation light designed for port side mounting. Energy-efficient LED technology with long service life. Meets COLREG requirements.",
-    "categoryIds": ["spare-parts", "navigation-equipment"],
+    "categoryIds": ["cr-1", "cr-1-sb-4", "cr-10", "cr-10-sb-1"],
     "brand": "NavTech",
     "price": {
       "type": "on-request"
@@ -81,7 +80,7 @@
     "partNumber": "GPS-X12-PRO",
     "description": "Advanced GPS chartplotter with 12-inch display",
     "fullDescription": "Professional-grade GPS chartplotter featuring a bright 12-inch touchscreen display, preloaded charts, and advanced navigation features including AIS integration.",
-    "categoryIds": ["spare-parts", "navigation-equipment"],
+    "categoryIds": ["cr-10", "cr-10-sb-3"],
     "brand": "MarineNav",
     "price": {
       "type": "fixed",
@@ -106,8 +105,8 @@
     "slug": "vhf-marine-radio-transceiver",
     "partNumber": "VHF-TRX-25W",
     "description": "25W VHF radio with DSC and GPS",
-    "fullDescription": "Professional VHF marine radio transceiver with 25W output power, integrated DSC (Digital Selective Calling), and GPS receiver. All international channels included.",
-    "categoryIds": ["communication"],
+    "fullDescription": "Professional VHF marine radio transceiver with 25W output power, integrated DSC and GPS receiver. All international channels included.",
+    "categoryIds": ["cr-8", "cr-10"],
     "brand": "CommMarine",
     "price": {
       "type": "fixed",
@@ -132,7 +131,7 @@
     "partNumber": "DFF-SPN-10M",
     "description": "High-efficiency fuel filter for marine diesel engines",
     "fullDescription": "Premium fuel filter designed for marine diesel engines. Features high-efficiency filtration to protect fuel injection systems. Suitable for engines up to 500HP.",
-    "categoryIds": ["spare-parts", "engine-components", "fuel-systems"],
+    "categoryIds": ["cr-12", "cr-12-sb-1", "cr-1", "cr-1-sb-2"],
     "brand": "EnginePro",
     "price": {
       "type": "fixed",
@@ -157,7 +156,7 @@
     "partNumber": "CLR-6P-VAL",
     "description": "Compact life raft for coastal navigation",
     "fullDescription": "Coastal life raft designed for 6 persons. Compact valise pack for easy storage. Includes basic survival equipment. Suitable for vessels operating within 50 miles of shore.",
-    "categoryIds": ["safety-equipment", "life-saving"],
+    "categoryIds": ["cr-9", "cr-9-sb-1"],
     "brand": "CoastalSafe",
     "price": {
       "type": "on-request"
@@ -179,8 +178,8 @@
     "slug": "emergency-position-radio-beacon-epirb",
     "partNumber": "EPIRB-G8-AUTO",
     "description": "406 MHz EPIRB with GPS and automatic activation",
-    "fullDescription": "Category 1 EPIRB with 406 MHz transmission and integrated GPS. Automatic float-free activation in emergency situations. 48-hour battery life. COSPAS-SARSAT approved.",
-    "categoryIds": ["safety-equipment", "emergency-signals"],
+    "fullDescription": "Category 1 EPIRB with 406 MHz transmission and integrated GPS. Automatic float-free activation in emergency situations. 48-hour battery life.",
+    "categoryIds": ["cr-9", "cr-9-sb-3"],
     "brand": "EmergencyTech",
     "price": {
       "type": "fixed",
@@ -206,7 +205,7 @@
     "partNumber": "MR-HD-20M18",
     "description": "18mm diameter nylon mooring rope, 20 meters",
     "fullDescription": "Professional-grade nylon mooring rope with 18mm diameter and 20-meter length. High breaking strength and excellent shock absorption. UV-resistant for long service life.",
-    "categoryIds": ["deck-equipment", "mooring"],
+    "categoryIds": ["cr-7", "cr-7-sb-3", "cr-11", "cr-11-sb-1"],
     "brand": "DeckMaster",
     "price": {
       "type": "fixed",
@@ -230,8 +229,8 @@
     "slug": "oceanmaster-solas-life-raft-12-person",
     "partNumber": "OM-LR-12S",
     "description": "SOLAS-approved life raft for 12 persons",
-    "fullDescription": "The OceanMaster SOLAS Life Raft is engineered for reliability and performance in the most challenging marine environments. Approved by SOLAS/MED, it meets all requirements for commercial vessels operating internationally. Its durable construction, high-visibility canopy, and comprehensive survival pack make it an essential piece of safety equipment for any professional maritime operation.",
-    "categoryIds": ["safety-equipment", "life-saving"],
+    "fullDescription": "OceanMaster SOLAS Life Raft engineered for reliability in harsh marine environments. Approved for commercial vessels and supplied with full SOLAS emergency pack.",
+    "categoryIds": ["cr-9", "cr-9-sb-1"],
     "brand": "OceanMaster",
     "price": {
       "type": "on-request"
@@ -246,14 +245,14 @@
     "specifications": [
       { "label": "Capacity", "value": "12 persons" },
       { "label": "Certification", "value": "SOLAS 74/96, MED" },
-      { "label": "Canopy", "value": "High-visibility orange with reflective tape" },
-      { "label": "Floor", "value": "Insulated for thermal protection" },
-      { "label": "Emergency Pack", "value": "SOLAS 'A' pack included" },
-      { "label": "Deployment", "value": "Davit-launch or throw-overboard" }
+      { "label": "Canopy", "value": "High-visibility orange" },
+      { "label": "Floor", "value": "Insulated" },
+      { "label": "Emergency Pack", "value": "SOLAS 'A' pack" },
+      { "label": "Deployment", "value": "Davit-launch / throw-overboard" }
     ],
     "compatibility": [
-      "Suitable for all commercial vessels",
-      "Offshore and coastal operations",
+      "Suitable for commercial vessels",
+      "Offshore operations",
       "Davit-launch systems",
       "Throw-overboard deployment"
     ],
@@ -266,7 +265,7 @@
     "partNumber": "PSS-102A",
     "description": "Dripless propeller shaft seal system",
     "fullDescription": "Advanced dripless shaft seal system that eliminates the need for traditional packing glands. Maintenance-free operation with superior sealing performance.",
-    "categoryIds": ["spare-parts", "engine-components"],
+    "categoryIds": ["cr-4", "cr-4-sb-6"],
     "brand": "ShaftTech",
     "price": {
       "type": "fixed",
@@ -289,8 +288,8 @@
     "slug": "anchor-chain-10mm-g43",
     "partNumber": "AC-10MM-G43",
     "description": "High-strength galvanized anchor chain",
-    "fullDescription": "Grade 43 galvanized anchor chain with 10mm link diameter. Suitable for anchors up to 25kg. Hot-dip galvanized for corrosion resistance.",
-    "categoryIds": ["deck-equipment", "anchoring"],
+    "fullDescription": "Grade 43 galvanized anchor chain with 10mm link diameter. Suitable for medium displacement yachts and workboats.",
+    "categoryIds": ["cr-7", "cr-7-sb-4"],
     "brand": "ChainMaster",
     "price": {
       "type": "fixed",
@@ -307,6 +306,72 @@
       { "label": "Finish", "value": "Hot-dip galvanized" },
       { "label": "Working Load", "value": "1300 kg" },
       { "label": "Price Unit", "value": "Per meter" }
+    ]
+  },
+  {
+    "id": "prod-013",
+    "name": "LED Deck Floodlight 30W",
+    "slug": "led-deck-floodlight-30w",
+    "partNumber": "DL-LED-30W-IP67",
+    "description": "IP67 LED floodlight for deck and work areas",
+    "fullDescription": "Rugged 30W LED deck floodlight providing wide-beam illumination for work decks and cockpits. IP67 waterproof housing with stainless mounting bracket.",
+    "categoryIds": ["cr-1", "cr-1-sb-3"],
+    "brand": "SeaBright",
+    "price": {
+      "type": "fixed",
+      "amount": 95,
+      "currency": "USD"
+    },
+    "stockStatus": "in-stock",
+    "images": [],
+    "specifications": [
+      { "label": "Power", "value": "30W" },
+      { "label": "Voltage", "value": "10–30V DC" },
+      { "label": "Protection", "value": "IP67" }
+    ]
+  },
+  {
+    "id": "prod-014",
+    "name": "Automatic Bilge Pump 1500 GPH",
+    "slug": "automatic-bilge-pump-1500-gph",
+    "partNumber": "BP-1500-AUTO",
+    "description": "High-capacity automatic bilge pump",
+    "fullDescription": "Submersible bilge pump with built‑in float switch delivering 1500 GPH at 12V. Suitable for engine rooms and deep bilge compartments.",
+    "categoryIds": ["cr-4", "cr-4-sb-1"],
+    "brand": "BilgePro",
+    "price": {
+      "type": "fixed",
+      "amount": 140,
+      "currency": "USD"
+    },
+    "stockStatus": "in-stock",
+    "images": [],
+    "specifications": [
+      { "label": "Capacity", "value": "1500 GPH" },
+      { "label": "Voltage", "value": "12V DC" },
+      { "label": "Outlet", "value": "1-1/8 inch" }
+    ]
+  },
+  {
+    "id": "prod-015",
+    "name": "Stainless Steel Deck Cleat 8\"",
+    "slug": "stainless-steel-deck-cleat-8",
+    "partNumber": "CLT-SS-8",
+    "description": "Polished stainless deck cleat",
+    "fullDescription": "Marine-grade AISI 316 stainless steel deck cleat with 8 inch length, ideal for mooring and spring lines.",
+    "categoryIds": ["cr-6", "cr-6-sb-1"],
+    "brand": "DeckMaster",
+    "price": {
+      "type": "fixed",
+      "amount": 32,
+      "currency": "USD"
+    },
+    "stockStatus": "in-stock",
+    "images": [],
+    "specifications": [
+      { "label": "Material", "value": "AISI 316 stainless steel" },
+      { "label": "Length", "value": "8 inch" },
+      { "label": "Mounting", "value": "Through-bolt" }
     ]
   }
 ]

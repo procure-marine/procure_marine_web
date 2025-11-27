@@ -1,82 +1,610 @@
-
 [
   {
-    "id": "spare-parts",
-    "name": "Spare Parts",
-    "slug": "spare-parts",
-    "description": "High-quality spare parts for all your vessel's needs",
+    "id": "cr-1",
+    "name": "Lighting",
+    "slug": "lighting",
+    "description": "Marine lighting solutions for interior, exterior, and navigation needs",
     "subcategories": [
       {
-        "id": "engine-components",
-        "name": "Engine Components",
-        "slug": "engine-components",
-        "description": "Engine parts and components"
+        "id": "cr-1-sb-1",
+        "name": "Interior Lighting",
+        "slug": "interior-lighting",
+        "description": "Cabin and interior lights for comfortable onboard visibility"
       },
       {
-        "id": "fuel-systems",
-        "name": "Fuel Systems",
-        "slug": "fuel-systems",
-        "description": "Fuel filters, pumps, and related components"
+        "id": "cr-1-sb-2",
+        "name": "Bulbs",
+        "slug": "bulbs",
+        "description": "Replacement bulbs for marine lighting fixtures"
       },
       {
-        "id": "navigation-equipment",
-        "name": "Navigation Equipment",
-        "slug": "navigation-equipment",
-        "description": "GPS, chartplotters, and navigation systems"
+        "id": "cr-1-sb-3",
+        "name": "Decklights",
+        "slug": "decklights",
+        "description": "Lighting fixtures designed for decks and outdoor areas"
+      },
+      {
+        "id": "cr-1-sb-4",
+        "name": "Navigation Lights",
+        "slug": "navigation-lights",
+        "description": "Regulation-compliant lights for safe navigation and signaling"
+      },
+      {
+        "id": "cr-1-sb-5",
+        "name": "Searchlights",
+        "slug": "searchlights",
+        "description": "High-intensity lights for spotting obstacles and night operations"
+      },
+      {
+        "id": "cr-1-sb-6",
+        "name": "Torches",
+        "slug": "torches",
+        "description": "Portable handheld lights for onboard and emergency use"
+      },
+      {
+        "id": "cr-1-sb-7",
+        "name": "Underwater Lights",
+        "slug": "underwater-lights",
+        "description": "Lighting fixtures for underwater illumination around the hull"
       }
     ]
   },
   {
-    "id": "safety-equipment",
-    "name": "Safety Equipment",
-    "slug": "safety-equipment",
-    "description": "Certified safety equipment to ensure compliance and crew safety",
+    "id": "cr-2",
+    "name": "Electricals",
+    "slug": "electricals",
+    "description": "Electrical systems and components for marine applications",
     "subcategories": [
       {
-        "id": "life-saving",
-        "name": "Life Saving",
-        "slug": "life-saving",
-        "description": "Life rafts, lifejackets, and emergency equipment"
+        "id": "cr-2-sb-1",
+        "name": "Horn",
+        "slug": "horn",
+        "description": "Audible signaling devices for marine safety and communication"
       },
       {
-        "id": "fire-fighting",
-        "name": "Fire Fighting",
-        "slug": "fire-fighting",
-        "description": "Fire extinguishers and fire safety equipment"
+        "id": "cr-2-sb-2",
+        "name": "Battery Switches",
+        "slug": "battery-switches",
+        "description": "Switches for isolating and managing onboard battery banks"
       },
       {
-        "id": "emergency-signals",
-        "name": "Emergency Signals",
-        "slug": "emergency-signals",
-        "description": "EPIRBs, flares, and distress signals"
+        "id": "cr-2-sb-3",
+        "name": "Blower & Fan",
+        "slug": "blower-fan",
+        "description": "Ventilation blowers and fans for cabins and engine rooms"
+      },
+      {
+        "id": "cr-2-sb-4",
+        "name": "Gauges & Sensors",
+        "slug": "gauges-sensors",
+        "description": "Monitoring instruments and sensors for engine and systems data"
+      },
+      {
+        "id": "cr-2-sb-5",
+        "name": "Bus Bars",
+        "slug": "bus-bars",
+        "description": "Bus bars for distributing electrical power safely and neatly"
+      },
+      {
+        "id": "cr-2-sb-6",
+        "name": "Wiper System",
+        "slug": "wiper-system",
+        "description": "Wiper motors, arms, and blades for clear visibility at sea"
+      },
+      {
+        "id": "cr-2-sb-7",
+        "name": "Switches & Panels",
+        "slug": "switches-panels",
+        "description": "Control switches and panels for onboard electrical circuits"
+      },
+      {
+        "id": "cr-2-sb-8",
+        "name": "Batteries & More",
+        "slug": "batteries-and-more",
+        "description": "Marine batteries and related power accessories"
+      },
+      {
+        "id": "cr-2-sb-9",
+        "name": "Circuit Breakers",
+        "slug": "circuit-breakers",
+        "description": "Protection devices for safeguarding electrical circuits from overload"
+      },
+      {
+        "id": "cr-2-sb-10",
+        "name": "ZeeVolt Products",
+        "slug": "zeevolt-products",
+        "description": "Brand-specific ZeeVolt marine electrical products"
+      },
+      {
+        "id": "cr-2-sb-11",
+        "name": "Grounding",
+        "slug": "grounding",
+        "description": "Grounding components for electrical safety and lightning protection"
+      },
+      {
+        "id": "cr-2-sb-12",
+        "name": "Solar",
+        "slug": "solar",
+        "description": "Solar panels and accessories for renewable onboard power"
+      },
+      {
+        "id": "cr-2-sb-13",
+        "name": "Relays and Solinoids",
+        "slug": "relays-solenoids",
+        "description": "Relays and solenoids for controlling high-current circuits"
+      },
+      {
+        "id": "cr-2-sb-14",
+        "name": "Wind Generator",
+        "slug": "wind-generator",
+        "description": "Wind-powered generators for supplemental charging at sea"
       }
     ]
   },
   {
-    "id": "deck-equipment",
-    "name": "Deck Equipment",
-    "slug": "deck-equipment",
-    "description": "Anchors, chains, ropes, and deck hardware",
+    "id": "cr-3",
+    "name": "Wiring",
+    "slug": "wiring",
+    "description": "Wiring, cables, and accessories for marine installations",
     "subcategories": [
       {
-        "id": "anchoring",
+        "id": "cr-3-sb-1",
+        "name": "Wiring & Cables",
+        "slug": "wiring-cables",
+        "description": "Marine-grade wires and cables for electrical systems"
+      },
+      {
+        "id": "cr-3-sb-2",
+        "name": "Blocks & Terminals",
+        "slug": "blocks-terminals",
+        "description": "Terminal blocks and connectors for secure wiring connections"
+      },
+      {
+        "id": "cr-3-sb-3",
+        "name": "Plugs & Connectors",
+        "slug": "plugs-connectors",
+        "description": "Electrical plugs and connectors for marine environments"
+      },
+      {
+        "id": "cr-3-sb-4",
+        "name": "Cable Accessories",
+        "slug": "cable-accessories",
+        "description": "Clips, ties, and accessories for cable routing and management"
+      },
+      {
+        "id": "cr-3-sb-5",
+        "name": "Fuse & Fuse Boxes",
+        "slug": "fuse-fuse-boxes",
+        "description": "Fuses and fuse boxes for circuit protection"
+      },
+      {
+        "id": "cr-3-sb-6",
+        "name": "Boxes/Glands",
+        "slug": "boxes-glands",
+        "description": "Junction boxes and cable glands for sealed connections"
+      },
+      {
+        "id": "cr-3-sb-7",
+        "name": "Circuit Breakers",
+        "slug": "wiring-circuit-breakers",
+        "description": "Breakers dedicated to wiring and distribution panels"
+      },
+      {
+        "id": "cr-3-sb-8",
+        "name": "Conduit & More",
+        "slug": "conduit-and-more",
+        "description": "Conduits and protective covers for cable runs"
+      },
+      {
+        "id": "cr-3-sb-9",
+        "name": "Panel Board Accessories",
+        "slug": "panel-board-accessories",
+        "description": "Accessories and hardware for electrical panel boards"
+      }
+    ]
+  },
+  {
+    "id": "cr-4",
+    "name": "Plumbing",
+    "slug": "plumbing",
+    "description": "Pumps, hoses, and plumbing fittings for marine systems",
+    "subcategories": [
+      {
+        "id": "cr-4-sb-1",
+        "name": "Bilge Pumps",
+        "slug": "bilge-pumps",
+        "description": "Pumps designed for removing water from bilge areas"
+      },
+      {
+        "id": "cr-4-sb-2",
+        "name": "Pressure Pumps",
+        "slug": "pressure-pumps",
+        "description": "Pressurised water pumps for onboard freshwater systems"
+      },
+      {
+        "id": "cr-4-sb-3",
+        "name": "Water Strainer",
+        "slug": "water-strainer",
+        "description": "Strainers for filtering debris from water intakes"
+      },
+      {
+        "id": "cr-4-sb-4",
+        "name": "Brass Fittings",
+        "slug": "brass-fittings",
+        "description": "Corrosion-resistant brass fittings for plumbing connections"
+      },
+      {
+        "id": "cr-4-sb-5",
+        "name": "Valves & Fittings",
+        "slug": "valves-fittings",
+        "description": "Valves and fittings for controlling water flow"
+      },
+      {
+        "id": "cr-4-sb-6",
+        "name": "Skin Fittings",
+        "slug": "skin-fittings",
+        "description": "Through-hull and skin fittings for hull penetrations"
+      },
+      {
+        "id": "cr-4-sb-7",
+        "name": "Quick Coupling System",
+        "slug": "quick-coupling-system",
+        "description": "Quick-connect coupling systems for hoses and pipes"
+      },
+      {
+        "id": "cr-4-sb-8",
+        "name": "Speedfit",
+        "slug": "speedfit",
+        "description": "Push-fit plumbing fittings for rapid installation"
+      },
+      {
+        "id": "cr-4-sb-9",
+        "name": "Exhaust System",
+        "slug": "exhaust-system",
+        "description": "Components for marine engine exhaust routing"
+      },
+      {
+        "id": "cr-4-sb-10",
+        "name": "Garden Hose & Fittings",
+        "slug": "garden-hose-fittings",
+        "description": "Hoses and fittings for washdown and deck use"
+      },
+      {
+        "id": "cr-4-sb-11",
+        "name": "Pump Accessories",
+        "slug": "pump-accessories",
+        "description": "Accessories and spares for marine pumps"
+      },
+      {
+        "id": "cr-4-sb-12",
+        "name": "Marine Hoses",
+        "slug": "marine-hoses",
+        "description": "Hoses suitable for various onboard water systems"
+      },
+      {
+        "id": "cr-4-sb-13",
+        "name": "Hose Fittings",
+        "slug": "hose-fittings",
+        "description": "Connectors and fittings for hose installations"
+      },
+      {
+        "id": "cr-4-sb-14",
+        "name": "Plumbing Fittings",
+        "slug": "plumbing-fittings",
+        "description": "General fittings for marine plumbing layouts"
+      },
+      {
+        "id": "cr-4-sb-15",
+        "name": "Drain Plugs",
+        "slug": "drain-plugs",
+        "description": "Drain plugs for transoms, bilges, and tanks"
+      }
+    ]
+  },
+  {
+    "id": "cr-5",
+    "name": "Toilet System",
+    "slug": "toilet-system",
+    "description": "Marine toilets and sanitation system components",
+    "subcategories": [
+      {
+        "id": "cr-5-sb-1",
+        "name": "Toilet System",
+        "slug": "toilet-system-main",
+        "description": "Complete marine toilet systems for onboard sanitation"
+      },
+      {
+        "id": "cr-5-sb-2",
+        "name": "Toilets & More",
+        "slug": "toilets-and-more",
+        "description": "Marine toilets and related sanitation hardware"
+      },
+      {
+        "id": "cr-5-sb-3",
+        "name": "Toilet & Accessories",
+        "slug": "toilet-accessories",
+        "description": "Accessories, spares, and fittings for marine toilets"
+      }
+    ]
+  },
+  {
+    "id": "cr-6",
+    "name": "Deck Hardware",
+    "slug": "deck-hardware",
+    "description": "Hardware and accessories for deck rigging and fittings",
+    "subcategories": [
+      {
+        "id": "cr-6-sb-1",
+        "name": "Cleats",
+        "slug": "cleats",
+        "description": "Deck cleats for securing lines and moorings"
+      },
+      {
+        "id": "cr-6-sb-2",
+        "name": "Hardware",
+        "slug": "hardware",
+        "description": "General deck hardware and metal fittings"
+      },
+      {
+        "id": "cr-6-sb-3",
+        "name": "Rigging",
+        "slug": "rigging",
+        "description": "Rigging components for sails and deck equipment"
+      },
+      {
+        "id": "cr-6-sb-4",
+        "name": "Ventilation",
+        "slug": "ventilation",
+        "description": "Deck vents and ventilators for airflow below deck"
+      },
+      {
+        "id": "cr-6-sb-5",
+        "name": "Hatches",
+        "slug": "hatches",
+        "description": "Deck hatches and access panels"
+      },
+      {
+        "id": "cr-6-sb-6",
+        "name": "Deck Fittings",
+        "slug": "deck-fittings",
+        "description": "General fittings for deck layout and hardware mounting"
+      },
+      {
+        "id": "cr-6-sb-7",
+        "name": "Ladders",
+        "slug": "ladders",
+        "description": "Boarding and swim ladders for easy access"
+      },
+      {
+        "id": "cr-6-sb-8",
+        "name": "Deck Accessories",
+        "slug": "deck-accessories",
+        "description": "Additional accessories to equip and protect the deck"
+      },
+      {
+        "id": "cr-6-sb-9",
+        "name": "Horn",
+        "slug": "deck-horn",
+        "description": "Deck-mounted horns for signaling and safety"
+      }
+    ]
+  },
+  {
+    "id": "cr-7",
+    "name": "Anchoring & Mooring",
+    "slug": "anchoring-mooring",
+    "description": "Solutions for anchoring, docking, and mooring vessels",
+    "subcategories": [
+      {
+        "id": "cr-7-sb-1",
+        "name": "Fenders",
+        "slug": "fenders",
+        "description": "Hull-protection fenders for docking and berthing"
+      },
+      {
+        "id": "cr-7-sb-2",
+        "name": "Fender Cover",
+        "slug": "fender-cover",
+        "description": "Covers to protect and style marine fenders"
+      },
+      {
+        "id": "cr-7-sb-3",
+        "name": "Mooring Accessories",
+        "slug": "mooring-accessories",
+        "description": "Accessories and hardware for mooring setups"
+      },
+      {
+        "id": "cr-7-sb-4",
         "name": "Anchoring",
         "slug": "anchoring",
-        "description": "Anchors and anchor chains"
+        "description": "Anchors and related anchoring equipment"
       },
       {
-        "id": "mooring",
-        "name": "Mooring",
-        "slug": "mooring",
-        "description": "Mooring ropes and fenders"
+        "id": "cr-7-sb-5",
+        "name": "Floats",
+        "slug": "floats",
+        "description": "Marker and support floats for lines and gear"
+      },
+      {
+        "id": "cr-7-sb-6",
+        "name": "Trailer Accessories",
+        "slug": "trailer-accessories",
+        "description": "Accessories for boat trailers and transport"
       }
     ]
   },
   {
-    "id": "communication",
-    "name": "Communication",
-    "slug": "communication",
-    "description": "VHF radios and communication equipment",
-    "subcategories": []
+    "id": "cr-8",
+    "name": "Electronics",
+    "slug": "electronics",
+    "description": "Marine electronic systems and entertainment equipment",
+    "subcategories": [
+      {
+        "id": "cr-8-sb-1",
+        "name": "Gauges & Sensors",
+        "slug": "electronics-gauges-sensors",
+        "description": "Electronic gauges and sensors for onboard monitoring"
+      },
+      {
+        "id": "cr-8-sb-2",
+        "name": "Marine Audio System",
+        "slug": "marine-audio-system",
+        "description": "Complete audio systems designed for marine use"
+      },
+      {
+        "id": "cr-8-sb-3",
+        "name": "Marine Speakers",
+        "slug": "marine-speakers",
+        "description": "Weather-resistant speakers for high-quality onboard sound"
+      }
+    ]
+  },
+  {
+    "id": "cr-9",
+    "name": "Safety",
+    "slug": "safety",
+    "description": "Personal safety gear and emergency equipment for crew",
+    "subcategories": [
+      {
+        "id": "cr-9-sb-1",
+        "name": "Life Jacket",
+        "slug": "life-jacket",
+        "description": "Personal flotation devices for all crew and passengers"
+      },
+      {
+        "id": "cr-9-sb-2",
+        "name": "Life Bouy Rings",
+        "slug": "life-bouy-rings",
+        "description": "Lifebuoy rings for man-overboard recovery"
+      },
+      {
+        "id": "cr-9-sb-3",
+        "name": "Safety Gears",
+        "slug": "safety-gears",
+        "description": "General safety equipment for onboard protection"
+      },
+      {
+        "id": "cr-9-sb-4",
+        "name": "Torches",
+        "slug": "safety-torches",
+        "description": "Emergency and safety torches for low-visibility situations"
+      }
+    ]
+  },
+  {
+    "id": "cr-10",
+    "name": "Navigation",
+    "slug": "navigation",
+    "description": "Equipment and systems to aid marine navigation",
+    "subcategories": [
+      {
+        "id": "cr-10-sb-1",
+        "name": "Navigation Lights",
+        "slug": "navigation-lights-nav",
+        "description": "Lights used specifically for navigation and right-of-way indication"
+      },
+      {
+        "id": "cr-10-sb-2",
+        "name": "Steering System",
+        "slug": "steering-system",
+        "description": "Helm, cables, and components for vessel steering control"
+      },
+      {
+        "id": "cr-10-sb-3",
+        "name": "Compass",
+        "slug": "compass",
+        "description": "Magnetic and steering compasses for course keeping"
+      }
+    ]
+  },
+  {
+    "id": "cr-11",
+    "name": "Ropes",
+    "slug": "ropes",
+    "description": "Marine-grade ropes for mooring, anchoring, and general use",
+    "subcategories": [
+      {
+        "id": "cr-11-sb-1",
+        "name": "Ropes",
+        "slug": "ropes-main",
+        "description": "General-purpose and specialized marine ropes"
+      }
+    ]
+  },
+  {
+    "id": "cr-12",
+    "name": "Fuel System",
+    "slug": "fuel-system",
+    "description": "Fuel transfer, filtration, and storage components",
+    "subcategories": [
+      {
+        "id": "cr-12-sb-1",
+        "name": "Filters",
+        "slug": "filters",
+        "description": "Fuel filters to protect engines from contaminants"
+      },
+      {
+        "id": "cr-12-sb-2",
+        "name": "Fuel Accessories",
+        "slug": "fuel-accessories",
+        "description": "Nozzles, caps, and accessories for fuel handling"
+      },
+      {
+        "id": "cr-12-sb-3",
+        "name": "Fuel System",
+        "slug": "fuel-system-main",
+        "description": "Core components of marine fuel delivery systems"
+      }
+    ]
+  },
+  {
+    "id": "cr-13",
+    "name": "Cleaning/Maintenance",
+    "slug": "cleaning-maintenance",
+    "description": "Products for cleaning, protection, and routine boat maintenance",
+    "subcategories": [
+      {
+        "id": "cr-13-sb-1",
+        "name": "Cleaning & Polishing Liquids",
+        "slug": "cleaning-polishing-liquids",
+        "description": "Liquids for washing, polishing, and restoring surfaces"
+      },
+      {
+        "id": "cr-13-sb-2",
+        "name": "Cleaning Accessories",
+        "slug": "cleaning-accessories",
+        "description": "Brushes, pads, and tools for effective cleaning"
+      },
+      {
+        "id": "cr-13-sb-3",
+        "name": "Adhesives",
+        "slug": "adhesives",
+        "description": "Marine-grade glues and sealants for repairs"
+      },
+      {
+        "id": "cr-13-sb-4",
+        "name": "Anodes",
+        "slug": "anodes",
+        "description": "Sacrificial anodes for corrosion protection"
+      },
+      {
+        "id": "cr-13-sb-5",
+        "name": "Lubricants",
+        "slug": "lubricants",
+        "description": "Oils and greases for moving parts and mechanisms"
+      },
+      {
+        "id": "cr-13-sb-6",
+        "name": "Body Fillers",
+        "slug": "body-fillers",
+        "description": "Fillers and compounds for surface repairs"
+      },
+      {
+        "id": "cr-13-sb-7",
+        "name": "Paints",
+        "slug": "paints",
+        "description": "Marine paints and coatings for hulls and topsides"
+      }
+    ]
   }
 ]
