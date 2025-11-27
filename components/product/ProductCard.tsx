@@ -22,12 +22,14 @@ export default function ProductCard({ product }: ProductCardProps) {
   const { addToCart } = useCart();
   const [isAdding, setIsAdding] = useState(false);
 
-  // Format price
+  // Format price and convert to AED
   const formatPrice = (amount: number, currency: string = 'USD') => {
-    return new Intl.NumberFormat('en-US', {
+    // Convert USD to AED (1 USD = 3.67 AED)
+    const aedAmount = currency === 'USD' ? amount * 3.67 : amount;
+    return new Intl.NumberFormat('en-AE', {
       style: 'currency',
-      currency: currency,
-    }).format(amount);
+      currency: 'AED',
+    }).format(aedAmount);
   };
 
   // Handle add to cart
@@ -43,40 +45,16 @@ export default function ProductCard({ product }: ProductCardProps) {
     }, 800);
   };
 
-  // Format stock status for display
-  const stockStatusConfig = {
-    'in-stock': {
-      text: 'In Stock',
-      class: 'bg-green-100 dark:bg-green-900/30 text-green-700 dark:text-green-400 border-green-200 dark:border-green-800',
-      icon: 'check_circle'
-    },
-    'on-request': {
-      text: 'On Request',
-      class: 'bg-yellow-100 dark:bg-yellow-900/30 text-yellow-700 dark:text-yellow-400 border-yellow-200 dark:border-yellow-800',
-      icon: 'schedule'
-    },
-    'out-of-stock': {
-      text: 'Out of Stock',
-      class: 'bg-red-100 dark:bg-red-900/30 text-red-700 dark:text-red-400 border-red-200 dark:border-red-800',
-      icon: 'cancel'
-    },
-    'low-stock': {
-      text: 'Low Stock',
-      class: 'bg-orange-100 dark:bg-orange-900/30 text-orange-700 dark:text-orange-400 border-orange-200 dark:border-orange-800',
-      icon: 'warning'
-    },
-  }[product.stockStatus];
-
   const isPriceOnRequest = product.price.type === 'on-request';
   const isOutOfStock = product.stockStatus === 'out-of-stock';
-  const isLowStock = product.stockStatus === 'low-stock'; // Assuming 'low-stock' is a new possible status
+  const isLowStock = product.stockStatus === 'low-stock';
 
   return (
     <div className="group relative bg-white dark:bg-card-dark rounded-3xl border border-gray-100 dark:border-gray-800 overflow-hidden hover:shadow-2xl hover:shadow-primary/10 dark:hover:shadow-black/40 transition-all duration-500 hover:-translate-y-2 flex flex-col h-full">
       {/* Image Container */}
       <div className="relative aspect-[4/3] overflow-hidden bg-gray-100 dark:bg-gray-800">
         <Image
-          src={product.images[0]} // Changed from product.image to product.images[0] to match existing Product type
+          src={product.images[0]}
           alt={product.name}
           fill
           className="object-cover transition-transform duration-700 group-hover:scale-110"
@@ -99,8 +77,8 @@ export default function ProductCard({ product }: ProductCardProps) {
           </span>
         </div>
 
-        {/* Quick Actions (Visible on Hover) */}
-        <div className="absolute bottom-4 left-0 right-0 px-4 translate-y-full group-hover:translate-y-0 transition-transform duration-500 flex gap-2">
+        {/* Quick Actions - Always visible on mobile, hover on desktop */}
+        <div className="absolute bottom-4 left-0 right-0 px-4 translate-y-0 md:translate-y-full md:group-hover:translate-y-0 transition-transform duration-500 flex gap-2">
           <Link href={`/products/${product.slug}`} className="flex-1">
             <button className="w-full bg-white/95 backdrop-blur text-primary text-sm font-bold py-2.5 rounded-xl hover:bg-primary hover:text-white transition-all shadow-lg flex items-center justify-center gap-2">
               View Details
@@ -112,8 +90,6 @@ export default function ProductCard({ product }: ProductCardProps) {
       {/* Content */}
       <div className="p-6 flex flex-col flex-grow gap-4">
         <div className="flex-grow space-y-2">
-          {/* Assuming product.category exists, otherwise remove or adapt */}
-          {product.category && <div className="text-xs font-bold text-primary uppercase tracking-wider">{product.category}</div>}
           <Link href={`/products/${product.slug}`} className="block group-hover:text-primary transition-colors">
             <h3 className="text-xl font-bold text-text-primary dark:text-white leading-tight line-clamp-2">
               {product.name}
@@ -126,8 +102,7 @@ export default function ProductCard({ product }: ProductCardProps) {
 
         <div className="pt-4 border-t border-gray-100 dark:border-gray-800 flex items-center justify-between gap-4 mt-auto">
           <div className="flex flex-col">
-            <span className="text-xs text-text-muted dark:text-gray-500 font-medium">Price</span>
-            {/* Adapted price display to match original Product type structure */}
+            <span className="text-xs text-gray-500 dark:text-gray-500 font-medium">Price</span>
             {!isPriceOnRequest ? (
               <p className="text-xl font-black text-primary">
                 {formatPrice(product.price.amount!, product.price.currency)}
