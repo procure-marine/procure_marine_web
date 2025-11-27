@@ -32,12 +32,14 @@ export default function ProductPage({ params }: ProductPageProps) {
     notFound();
   }
 
-  // Format price
+  // Format price and convert to AED
   const formatPrice = (amount: number, currency: string = 'USD') => {
-    return new Intl.NumberFormat('en-US', {
+    // Convert USD to AED (1 USD = 3.67 AED)
+    const aedAmount = currency === 'USD' ? amount * 3.67 : amount;
+    return new Intl.NumberFormat('en-AE', {
       style: 'currency',
-      currency: currency,
-    }).format(amount);
+      currency: 'AED',
+    }).format(aedAmount);
   };
 
   // Handle add to cart
@@ -108,12 +110,12 @@ export default function ProductPage({ params }: ProductPageProps) {
 
           {/* Product Info */}
           <div className="flex flex-col">
-            <h1 className="text-4xl font-bold text-text-light dark:text-text-dark mb-4">
+            <h1 className="text-4xl font-bold text-text-primary dark:text-white mb-4">
               {product.name}
             </h1>
 
-            <p className="text-lg text-text-muted-light dark:text-text-muted-dark mb-4">
-              Part Number: <span className="font-semibold">{product.partNumber}</span>
+            <p className="text-lg text-text-secondary dark:text-gray-400 mb-4">
+              Part Number: <span className="font-semibold text-text-primary dark:text-white">{product.partNumber}</span>
             </p>
 
             {/* Stock Status Badge */}
@@ -142,10 +144,10 @@ export default function ProductPage({ params }: ProductPageProps) {
 
             {/* Description */}
             <div className="mb-8">
-              <h3 className="text-lg font-semibold text-text-light dark:text-text-dark mb-2">
+              <h3 className="text-lg font-semibold text-text-primary dark:text-white mb-2">
                 Description
               </h3>
-              <p className="text-text-muted-light dark:text-text-muted-dark leading-relaxed">
+              <p className="text-text-secondary dark:text-gray-400 leading-relaxed">
                 {product.description}
               </p>
             </div>
@@ -153,8 +155,8 @@ export default function ProductPage({ params }: ProductPageProps) {
             {/* Brand */}
             {product.brand && (
               <div className="mb-6">
-                <p className="text-text-muted-light dark:text-text-muted-dark">
-                  Brand: <span className="font-semibold text-text-light dark:text-text-dark">{product.brand}</span>
+                <p className="text-text-secondary dark:text-gray-400">
+                  Brand: <span className="font-semibold text-text-primary dark:text-white">{product.brand}</span>
                 </p>
               </div>
             )}
@@ -164,7 +166,7 @@ export default function ProductPage({ params }: ProductPageProps) {
               <div className="flex flex-col sm:flex-row gap-4 mb-8">
                 {/* Quantity */}
                 <div className="flex items-center gap-2">
-                  <label className="text-sm font-semibold text-text-light dark:text-text-dark">
+                  <label className="text-sm font-semibold text-text-primary dark:text-white">
                     Quantity:
                   </label>
                   <div className="flex items-center gap-2">
@@ -174,7 +176,7 @@ export default function ProductPage({ params }: ProductPageProps) {
                     >
                       <span className="material-symbols-outlined text-sm">remove</span>
                     </button>
-                    <span className="w-16 text-center font-semibold text-text-light dark:text-text-dark">
+                    <span className="w-16 text-center font-semibold text-text-primary dark:text-white">
                       {quantity}
                     </span>
                     <button
@@ -209,12 +211,12 @@ export default function ProductPage({ params }: ProductPageProps) {
             {/* Quick Actions */}
             <div className="flex gap-4">
               <Link href="/cart" className="flex-1">
-                <button className="w-full border border-primary text-primary dark:border-secondary dark:text-secondary py-3 rounded-lg font-bold hover:bg-primary/10 dark:hover:bg-secondary/10 transition-colors">
+                <button className="w-full border border-primary text-primary py-3 rounded-lg font-bold hover:bg-primary/10 transition-colors">
                   View Cart
                 </button>
               </Link>
               <Link href="/contact" className="flex-1">
-                <button className="w-full border border-gray-300 dark:border-gray-600 text-text-light dark:text-text-dark py-3 rounded-lg font-bold hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors">
+                <button className="w-full border border-gray-300 dark:border-gray-600 text-text-primary dark:text-white py-3 rounded-lg font-bold hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors">
                   Contact Us
                 </button>
               </Link>
@@ -225,7 +227,7 @@ export default function ProductPage({ params }: ProductPageProps) {
         {/* Specifications */}
         {product.specifications && product.specifications.length > 0 && (
           <section className="mb-16">
-            <h2 className="text-2xl font-bold text-text-light dark:text-text-dark mb-6">
+            <h2 className="text-2xl font-bold text-text-primary dark:text-white mb-6">
               Specifications
             </h2>
             <div className="bg-white dark:bg-card-dark rounded-xl border border-gray-200 dark:border-gray-700 overflow-hidden">
@@ -236,10 +238,10 @@ export default function ProductPage({ params }: ProductPageProps) {
                       key={index}
                       className={index % 2 === 0 ? 'bg-gray-50 dark:bg-gray-800/50' : ''}
                     >
-                      <td className="px-6 py-4 font-semibold text-text-light dark:text-text-dark w-1/3">
+                      <td className="px-6 py-4 font-semibold text-text-primary dark:text-white w-1/3">
                         {spec.label}
                       </td>
-                      <td className="px-6 py-4 text-text-muted-light dark:text-text-muted-dark">
+                      <td className="px-6 py-4 text-text-secondary dark:text-gray-400">
                         {spec.value}
                       </td>
                     </tr>
@@ -253,14 +255,14 @@ export default function ProductPage({ params }: ProductPageProps) {
         {/* Compatibility */}
         {product.compatibility && product.compatibility.length > 0 && (
           <section className="mb-16">
-            <h2 className="text-2xl font-bold text-text-light dark:text-text-dark mb-6">
+            <h2 className="text-2xl font-bold text-text-primary dark:text-white mb-6">
               Compatibility
             </h2>
             <div className="bg-white dark:bg-card-dark rounded-xl border border-gray-200 dark:border-gray-700 p-6">
               <ul className="grid sm:grid-cols-2 gap-3">
                 {product.compatibility.map((item, index) => (
-                  <li key={index} className="flex items-center gap-2 text-text-muted-light dark:text-text-muted-dark">
-                    <span className="material-symbols-outlined text-primary dark:text-secondary text-sm">
+                  <li key={index} className="flex items-center gap-2 text-text-secondary dark:text-gray-400">
+                    <span className="material-symbols-outlined text-primary text-sm">
                       check_circle
                     </span>
                     {item}

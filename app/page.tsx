@@ -12,7 +12,7 @@
 
 import Link from 'next/link';
 import Image from 'next/image';
-import { getFeaturedProducts } from '@/lib/data';
+import { getFeaturedProducts, getCategories } from '@/lib/data';
 import ProductCard from '@/components/product/ProductCard';
 
 export default function HomePage() {
@@ -136,6 +136,68 @@ export default function HomePage() {
                 </p>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Browse by Category Section */}
+      <section className="bg-background-light dark:bg-gray-900 px-4 sm:px-8 lg:px-10 py-32 border-t border-gray-100 dark:border-gray-800 relative">
+        {/* Background Pattern */}
+        <div className="absolute inset-0 opacity-[0.03] pointer-events-none" style={{ backgroundImage: 'radial-gradient(#00629B 1px, transparent 1px)', backgroundSize: '32px 32px' }}></div>
+
+        <div className="max-w-7xl mx-auto w-full relative z-10">
+          <div className="flex flex-col md:flex-row justify-between items-end gap-6 mb-16">
+            <div className="flex flex-col gap-4 max-w-2xl">
+              <span className="text-primary font-bold tracking-wider uppercase text-sm">Shop by Category</span>
+              <h2 className="text-text-primary dark:text-white text-4xl font-black leading-tight sm:text-5xl tracking-tight">
+                Browse <span className="text-primary">Marine Categories</span>
+              </h2>
+              <p className="text-text-secondary dark:text-gray-400 text-lg leading-relaxed font-medium">
+                Explore our comprehensive range of marine equipment organized by category for easy navigation.
+              </p>
+            </div>
+          </div>
+
+          {/* Categories Grid */}
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-6">
+            {getCategories().map((category) => (
+              <Link
+                key={category.id}
+                href={`/products?category=${category.id}`}
+                className="group flex flex-col gap-4 rounded-2xl border border-gray-100 dark:border-gray-800 bg-white dark:bg-card-dark p-6 hover:shadow-2xl hover:shadow-primary/10 dark:hover:shadow-black/40 transition-all duration-500 hover:-translate-y-2"
+              >
+                <div className="w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center group-hover:bg-primary group-hover:scale-110 transition-all duration-500 text-primary group-hover:text-white">
+                  <span className="material-symbols-outlined text-3xl">
+                    {category.name === 'Lighting' ? 'lightbulb' :
+                     category.name === 'Electricals' ? 'electrical_services' :
+                     category.name === 'Wiring' ? 'cable' :
+                     category.name === 'Plumbing' ? 'plumbing' :
+                     category.name === 'Toilet System' ? 'wc' :
+                     category.name === 'Deck Hardware' ? 'hardware' :
+                     category.name === 'Anchoring & Mooring' ? 'anchor' :
+                     category.name === 'Electronics' ? 'devices' :
+                     category.name === 'Safety' ? 'health_and_safety' :
+                     category.name === 'Navigation' ? 'explore' :
+                     category.name === 'Ropes' ? 'link' :
+                     category.name === 'Fuel System' ? 'local_gas_station' :
+                     category.name === 'Cleaning/Maintenance' ? 'cleaning_services' :
+                     'category'}
+                  </span>
+                </div>
+                <div className="flex flex-col gap-2">
+                  <h3 className="text-text-primary dark:text-white text-lg font-bold leading-tight group-hover:text-primary transition-colors">
+                    {category.name}
+                  </h3>
+                  <p className="text-text-secondary dark:text-gray-400 text-sm leading-relaxed line-clamp-2">
+                    {category.description}
+                  </p>
+                  <div className="flex items-center gap-1 text-primary text-sm font-bold mt-2 opacity-0 group-hover:opacity-100 transition-opacity">
+                    <span>View Products</span>
+                    <span className="material-symbols-outlined text-sm group-hover:translate-x-1 transition-transform">arrow_forward</span>
+                  </div>
+                </div>
+              </Link>
+            ))}
           </div>
         </div>
       </section>

@@ -373,5 +373,1493 @@
       { "label": "Length", "value": "8 inch" },
       { "label": "Mounting", "value": "Through-bolt" }
     ]
+  },
+  {
+    "id": "prod-016",
+    "name": "LED Cabin Light 12V White",
+    "slug": "led-cabin-light-12v-white",
+    "partNumber": "CL-LED-12W",
+    "description": "Energy-efficient LED interior cabin light",
+    "fullDescription": "Sleek LED cabin light with warm white illumination. Low power consumption and long lifespan. Surface mount design with stainless steel trim.",
+    "categoryIds": ["cr-1", "cr-1-sb-1"],
+    "brand": "SeaBright",
+    "price": {
+      "type": "fixed",
+      "amount": 45,
+      "currency": "USD"
+    },
+    "stockStatus": "in-stock",
+    "images": [],
+    "specifications": [
+      { "label": "Voltage", "value": "12V DC" },
+      { "label": "Power", "value": "3W" },
+      { "label": "Color Temperature", "value": "3000K Warm White" },
+      { "label": "Mounting", "value": "Surface mount" }
+    ]
+  },
+  {
+    "id": "prod-017",
+    "name": "Halogen Bulb BA15D 25W",
+    "slug": "halogen-bulb-ba15d-25w",
+    "partNumber": "BLB-HAL-BA15D-25",
+    "description": "Replacement halogen bulb for marine fixtures",
+    "fullDescription": "Standard BA15D base halogen bulb suitable for navigation lights and interior fixtures. 25W power rating.",
+    "categoryIds": ["cr-1", "cr-1-sb-2"],
+    "brand": "NavTech",
+    "price": {
+      "type": "fixed",
+      "amount": 8,
+      "currency": "USD"
+    },
+    "stockStatus": "in-stock",
+    "images": [],
+    "specifications": [
+      { "label": "Base Type", "value": "BA15D" },
+      { "label": "Power", "value": "25W" },
+      { "label": "Voltage", "value": "12V" }
+    ]
+  },
+  {
+    "id": "prod-018",
+    "name": "Remote Control Searchlight 100W",
+    "slug": "remote-control-searchlight-100w",
+    "partNumber": "SL-RC-100W",
+    "description": "Powerful remote-controlled marine searchlight",
+    "fullDescription": "High-intensity 100W searchlight with wireless remote control. 360-degree rotation and adjustable beam angle. IP67 waterproof rating.",
+    "categoryIds": ["cr-1", "cr-1-sb-5"],
+    "brand": "SeaBright",
+    "price": {
+      "type": "fixed",
+      "amount": 385,
+      "currency": "USD"
+    },
+    "stockStatus": "in-stock",
+    "images": [],
+    "specifications": [
+      { "label": "Power", "value": "100W" },
+      { "label": "Control", "value": "Wireless remote" },
+      { "label": "Rotation", "value": "360°" },
+      { "label": "Protection", "value": "IP67" }
+    ]
+  },
+  {
+    "id": "prod-019",
+    "name": "Waterproof LED Torch Rechargeable",
+    "slug": "waterproof-led-torch-rechargeable",
+    "partNumber": "TRC-LED-RECH",
+    "description": "Rechargeable waterproof LED flashlight",
+    "fullDescription": "Durable rechargeable LED torch with 500 lumen output. IPX8 waterproof rating, floats on water. Includes USB charging cable.",
+    "categoryIds": ["cr-1", "cr-1-sb-6", "cr-9", "cr-9-sb-4"],
+    "brand": "SafeMarine",
+    "price": {
+      "type": "fixed",
+      "amount": 55,
+      "currency": "USD"
+    },
+    "stockStatus": "in-stock",
+    "images": [],
+    "specifications": [
+      { "label": "Output", "value": "500 lumens" },
+      { "label": "Waterproof", "value": "IPX8" },
+      { "label": "Battery", "value": "Rechargeable Li-ion" },
+      { "label": "Runtime", "value": "4-6 hours" }
+    ]
+  },
+  {
+    "id": "prod-020",
+    "name": "Underwater LED Light Blue 60W",
+    "slug": "underwater-led-light-blue-60w",
+    "partNumber": "UWL-LED-60B",
+    "description": "High-power underwater LED light in blue",
+    "fullDescription": "Marine-grade underwater LED light with blue illumination. Through-hull installation. Creates stunning underwater ambiance and attracts fish.",
+    "categoryIds": ["cr-1", "cr-1-sb-7"],
+    "brand": "SeaBright",
+    "price": {
+      "type": "fixed",
+      "amount": 295,
+      "currency": "USD"
+    },
+    "stockStatus": "in-stock",
+    "images": [],
+    "specifications": [
+      { "label": "Power", "value": "60W" },
+      { "label": "Color", "value": "Blue" },
+      { "label": "Voltage", "value": "12-24V DC" },
+      { "label": "Installation", "value": "Through-hull" }
+    ]
+  },
+  {
+    "id": "prod-021",
+    "name": "Dual Trumpet Air Horn",
+    "slug": "dual-trumpet-air-horn",
+    "partNumber": "HRN-AIR-DT",
+    "description": "Loud dual trumpet air horn for marine use",
+    "fullDescription": "Chrome-plated dual trumpet air horn with compressor. 120dB output meets USCG requirements. Includes mounting hardware.",
+    "categoryIds": ["cr-2", "cr-2-sb-1", "cr-6", "cr-6-sb-9"],
+    "brand": "CommMarine",
+    "price": {
+      "type": "fixed",
+      "amount": 175,
+      "currency": "USD"
+    },
+    "stockStatus": "in-stock",
+    "images": [],
+    "specifications": [
+      { "label": "Output", "value": "120dB" },
+      { "label": "Type", "value": "Dual trumpet" },
+      { "label": "Voltage", "value": "12V DC" },
+      { "label": "Certification", "value": "USCG approved" }
+    ]
+  },
+  {
+    "id": "prod-022",
+    "name": "Battery Selector Switch 4-Position",
+    "slug": "battery-selector-switch-4-position",
+    "partNumber": "BSW-4POS-300A",
+    "description": "Heavy-duty 4-position battery switch",
+    "fullDescription": "Rotary battery selector switch with 4 positions (OFF/1/2/BOTH). 300A continuous rating. Corrosion-resistant construction.",
+    "categoryIds": ["cr-2", "cr-2-sb-2"],
+    "brand": "PowerMarine",
+    "price": {
+      "type": "fixed",
+      "amount": 85,
+      "currency": "USD"
+    },
+    "stockStatus": "in-stock",
+    "images": [],
+    "specifications": [
+      { "label": "Positions", "value": "4 (OFF/1/2/BOTH)" },
+      { "label": "Current Rating", "value": "300A continuous" },
+      { "label": "Voltage", "value": "12-48V DC" }
+    ]
+  },
+  {
+    "id": "prod-023",
+    "name": "Inline Bilge Blower 4 inch",
+    "slug": "inline-bilge-blower-4-inch",
+    "partNumber": "BLW-IL-4IN",
+    "description": "Powerful inline bilge ventilation blower",
+    "fullDescription": "High-flow inline blower for engine room and bilge ventilation. 4-inch duct connection. Ignition-protected for safe operation near fuel vapors.",
+    "categoryIds": ["cr-2", "cr-2-sb-3"],
+    "brand": "VentPro",
+    "price": {
+      "type": "fixed",
+      "amount": 95,
+      "currency": "USD"
+    },
+    "stockStatus": "in-stock",
+    "images": [],
+    "specifications": [
+      { "label": "Duct Size", "value": "4 inch" },
+      { "label": "Airflow", "value": "270 CFM" },
+      { "label": "Voltage", "value": "12V DC" },
+      { "label": "Protection", "value": "Ignition-protected" }
+    ]
+  },
+  {
+    "id": "prod-024",
+    "name": "Digital Fuel Gauge with Sender",
+    "slug": "digital-fuel-gauge-sender",
+    "partNumber": "GGE-FUEL-DIG",
+    "description": "Digital fuel level gauge with tank sender",
+    "fullDescription": "Precision digital fuel gauge with LED display. Includes adjustable tank sender unit. Programmable for various tank sizes.",
+    "categoryIds": ["cr-2", "cr-2-sb-4", "cr-8", "cr-8-sb-1"],
+    "brand": "MarineNav",
+    "price": {
+      "type": "fixed",
+      "amount": 145,
+      "currency": "USD"
+    },
+    "stockStatus": "in-stock",
+    "images": [],
+    "specifications": [
+      { "label": "Display", "value": "LED digital" },
+      { "label": "Voltage", "value": "12V DC" },
+      { "label": "Sender", "value": "Adjustable 10-180 ohm" }
+    ]
+  },
+  {
+    "id": "prod-025",
+    "name": "Power Distribution Bus Bar 12-Circuit",
+    "slug": "power-distribution-bus-bar-12",
+    "partNumber": "BB-12CKT-100A",
+    "description": "12-circuit power distribution bus bar",
+    "fullDescription": "Tinned copper bus bar with 12 circuit positions. Includes negative bus and cover. 100A main rating with individual circuit protection.",
+    "categoryIds": ["cr-2", "cr-2-sb-5"],
+    "brand": "PowerMarine",
+    "price": {
+      "type": "fixed",
+      "amount": 165,
+      "currency": "USD"
+    },
+    "stockStatus": "in-stock",
+    "images": [],
+    "specifications": [
+      { "label": "Circuits", "value": "12" },
+      { "label": "Main Rating", "value": "100A" },
+      { "label": "Material", "value": "Tinned copper" }
+    ]
+  },
+  {
+    "id": "prod-026",
+    "name": "Marine Wiper Motor Kit",
+    "slug": "marine-wiper-motor-kit",
+    "partNumber": "WPR-MTR-KIT",
+    "description": "Complete wiper motor and arm kit",
+    "fullDescription": "Heavy-duty wiper motor kit with stainless steel arm and blade. Self-parking feature. Suitable for windshields up to 30 inches.",
+    "categoryIds": ["cr-2", "cr-2-sb-6"],
+    "brand": "DeckMaster",
+    "price": {
+      "type": "fixed",
+      "amount": 225,
+      "currency": "USD"
+    },
+    "stockStatus": "in-stock",
+    "images": [],
+    "specifications": [
+      { "label": "Voltage", "value": "12V DC" },
+      { "label": "Arm Length", "value": "14 inch" },
+      { "label": "Features", "value": "Self-parking" }
+    ]
+  },
+  {
+    "id": "prod-027",
+    "name": "6-Gang Rocker Switch Panel",
+    "slug": "6-gang-rocker-switch-panel",
+    "partNumber": "SWP-6G-LED",
+    "description": "Waterproof switch panel with LED indicators",
+    "fullDescription": "6-gang switch panel with illuminated rocker switches. Each switch has LED indicator. Circuit breaker protected. Splash-proof design.",
+    "categoryIds": ["cr-2", "cr-2-sb-7"],
+    "brand": "PowerMarine",
+    "price": {
+      "type": "fixed",
+      "amount": 135,
+      "currency": "USD"
+    },
+    "stockStatus": "in-stock",
+    "images": [],
+    "specifications": [
+      { "label": "Switches", "value": "6 gang" },
+      { "label": "Indicators", "value": "LED" },
+      { "label": "Protection", "value": "Circuit breakers" },
+      { "label": "Rating", "value": "20A per switch" }
+    ]
+  },
+  {
+    "id": "prod-028",
+    "name": "AGM Deep Cycle Battery 100Ah",
+    "slug": "agm-deep-cycle-battery-100ah",
+    "partNumber": "BAT-AGM-100",
+    "description": "Maintenance-free AGM marine battery",
+    "fullDescription": "Premium AGM deep cycle battery with 100Ah capacity. Sealed, maintenance-free design. Excellent for house bank and trolling applications.",
+    "categoryIds": ["cr-2", "cr-2-sb-8"],
+    "brand": "PowerMarine",
+    "price": {
+      "type": "fixed",
+      "amount": 285,
+      "currency": "USD"
+    },
+    "stockStatus": "in-stock",
+    "images": [],
+    "specifications": [
+      { "label": "Capacity", "value": "100Ah" },
+      { "label": "Type", "value": "AGM Deep Cycle" },
+      { "label": "Voltage", "value": "12V" },
+      { "label": "Weight", "value": "66 lbs" }
+    ]
+  },
+  {
+    "id": "prod-029",
+    "name": "Hydraulic Magnetic Circuit Breaker 30A",
+    "slug": "circuit-breaker-30a",
+    "partNumber": "CB-HM-30A",
+    "description": "30A hydraulic magnetic circuit breaker",
+    "fullDescription": "Panel-mount circuit breaker with push-to-reset button. Hydraulic magnetic trip mechanism. Ignition protected.",
+    "categoryIds": ["cr-2", "cr-2-sb-9", "cr-3", "cr-3-sb-7"],
+    "brand": "SafeMarine",
+    "price": {
+      "type": "fixed",
+      "amount": 35,
+      "currency": "USD"
+    },
+    "stockStatus": "in-stock",
+    "images": [],
+    "specifications": [
+      { "label": "Rating", "value": "30A" },
+      { "label": "Type", "value": "Hydraulic magnetic" },
+      { "label": "Voltage", "value": "12-48V DC" }
+    ]
+  },
+  {
+    "id": "prod-030",
+    "name": "Solar Panel 100W Monocrystalline",
+    "slug": "solar-panel-100w-mono",
+    "partNumber": "SOL-100W-MONO",
+    "description": "High-efficiency marine solar panel",
+    "fullDescription": "100W monocrystalline solar panel with marine-grade aluminum frame. Includes mounting brackets and MC4 connectors. 25-year warranty.",
+    "categoryIds": ["cr-2", "cr-2-sb-12"],
+    "brand": "SolarMarine",
+    "price": {
+      "type": "fixed",
+      "amount": 195,
+      "currency": "USD"
+    },
+    "stockStatus": "in-stock",
+    "images": [],
+    "specifications": [
+      { "label": "Power", "value": "100W" },
+      { "label": "Type", "value": "Monocrystalline" },
+      { "label": "Voltage", "value": "18V nominal" },
+      { "label": "Warranty", "value": "25 years" }
+    ]
+  },
+  {
+    "id": "prod-031",
+    "name": "Heavy Duty Relay 12V 80A",
+    "slug": "relay-12v-80a",
+    "partNumber": "RLY-12V-80A",
+    "description": "High-current relay for marine applications",
+    "fullDescription": "Sealed relay suitable for high-current switching. 80A continuous rating. Coil voltage 12V DC. Corrosion-resistant terminals.",
+    "categoryIds": ["cr-2", "cr-2-sb-13"],
+    "brand": "PowerMarine",
+    "price": {
+      "type": "fixed",
+      "amount": 28,
+      "currency": "USD"
+    },
+    "stockStatus": "in-stock",
+    "images": [],
+    "specifications": [
+      { "label": "Coil Voltage", "value": "12V DC" },
+      { "label": "Contact Rating", "value": "80A continuous" },
+      { "label": "Type", "value": "SPST sealed" }
+    ]
+  },
+  {
+    "id": "prod-032",
+    "name": "Marine Tinned Copper Wire 10 AWG",
+    "slug": "tinned-copper-wire-10awg",
+    "partNumber": "WIR-TC-10AWG-R",
+    "description": "Marine-grade tinned copper wire, red",
+    "fullDescription": "Premium tinned copper wire with UV-resistant insulation. Meets ABYC standards. Sold per foot. Available in multiple colors.",
+    "categoryIds": ["cr-3", "cr-3-sb-1"],
+    "brand": "WireMaster",
+    "price": {
+      "type": "fixed",
+      "amount": 2.5,
+      "currency": "USD"
+    },
+    "stockStatus": "in-stock",
+    "images": [],
+    "specifications": [
+      { "label": "Gauge", "value": "10 AWG" },
+      { "label": "Conductor", "value": "Tinned copper" },
+      { "label": "Insulation", "value": "UV-resistant" },
+      { "label": "Price Unit", "value": "Per foot" }
+    ]
+  },
+  {
+    "id": "prod-033",
+    "name": "Terminal Block 12-Position",
+    "slug": "terminal-block-12-position",
+    "partNumber": "TB-12P-30A",
+    "description": "12-position terminal connection block",
+    "fullDescription": "Dual-row terminal block with 12 positions. 30A per terminal rating. Includes cover and mounting screws.",
+    "categoryIds": ["cr-3", "cr-3-sb-2"],
+    "brand": "WireMaster",
+    "price": {
+      "type": "fixed",
+      "amount": 18,
+      "currency": "USD"
+    },
+    "stockStatus": "in-stock",
+    "images": [],
+    "specifications": [
+      { "label": "Positions", "value": "12" },
+      { "label": "Rating", "value": "30A per terminal" },
+      { "label": "Voltage", "value": "600V max" }
+    ]
+  },
+  {
+    "id": "prod-034",
+    "name": "Waterproof Shore Power Connector 30A",
+    "slug": "shore-power-connector-30a",
+    "partNumber": "SPC-30A-125V",
+    "description": "30A 125V shore power inlet connector",
+    "fullDescription": "Locking shore power connector with weatherproof cover. Stainless steel trim ring. Meets NEMA SS2-50P standard.",
+    "categoryIds": ["cr-3", "cr-3-sb-3"],
+    "brand": "PowerMarine",
+    "price": {
+      "type": "fixed",
+      "amount": 65,
+      "currency": "USD"
+    },
+    "stockStatus": "in-stock",
+    "images": [],
+    "specifications": [
+      { "label": "Current", "value": "30A" },
+      { "label": "Voltage", "value": "125V AC" },
+      { "label": "Standard", "value": "NEMA SS2-50P" }
+    ]
+  },
+  {
+    "id": "prod-035",
+    "name": "Cable Tie Kit Marine Grade",
+    "slug": "cable-tie-kit-marine",
+    "partNumber": "CT-KIT-UV",
+    "description": "UV-resistant cable tie assortment",
+    "fullDescription": "Assorted cable ties in various sizes. UV-resistant nylon construction. Includes mounting bases. 200-piece kit.",
+    "categoryIds": ["cr-3", "cr-3-sb-4"],
+    "brand": "DeckMaster",
+    "price": {
+      "type": "fixed",
+      "amount": 22,
+      "currency": "USD"
+    },
+    "stockStatus": "in-stock",
+    "images": [],
+    "specifications": [
+      { "label": "Quantity", "value": "200 pieces" },
+      { "label": "Material", "value": "UV-resistant nylon" },
+      { "label": "Sizes", "value": "Assorted" }
+    ]
+  },
+  {
+    "id": "prod-036",
+    "name": "ATO Blade Fuse Holder Waterproof",
+    "slug": "ato-fuse-holder-waterproof",
+    "partNumber": "FH-ATO-WP",
+    "description": "Waterproof inline fuse holder for ATO fuses",
+    "fullDescription": "Sealed inline fuse holder for standard ATO blade fuses. 12 AWG wire leads. IP67 waterproof rating.",
+    "categoryIds": ["cr-3", "cr-3-sb-5"],
+    "brand": "SafeMarine",
+    "price": {
+      "type": "fixed",
+      "amount": 12,
+      "currency": "USD"
+    },
+    "stockStatus": "in-stock",
+    "images": [],
+    "specifications": [
+      { "label": "Fuse Type", "value": "ATO blade" },
+      { "label": "Wire Gauge", "value": "12 AWG" },
+      { "label": "Protection", "value": "IP67 waterproof" }
+    ]
+  },
+  {
+    "id": "prod-037",
+    "name": "Junction Box IP67 4-Way",
+    "slug": "junction-box-ip67-4way",
+    "partNumber": "JB-IP67-4W",
+    "description": "Waterproof 4-way junction box",
+    "fullDescription": "Heavy-duty waterproof junction box with 4 cable entries. IP67 rated. Includes mounting screws and gaskets.",
+    "categoryIds": ["cr-3", "cr-3-sb-6"],
+    "brand": "WireMaster",
+    "price": {
+      "type": "fixed",
+      "amount": 35,
+      "currency": "USD"
+    },
+    "stockStatus": "in-stock",
+    "images": [],
+    "specifications": [
+      { "label": "Entries", "value": "4-way" },
+      { "label": "Protection", "value": "IP67" },
+      { "label": "Material", "value": "ABS plastic" }
+    ]
+  },
+  {
+    "id": "prod-038",
+    "name": "Split Loom Tubing 1/2 inch",
+    "slug": "split-loom-tubing-half-inch",
+    "partNumber": "SLT-12IN-BK",
+    "description": "Flexible split loom wire conduit",
+    "fullDescription": "Flexible polyethylene split loom for wire protection and organization. UV-resistant. Sold per foot.",
+    "categoryIds": ["cr-3", "cr-3-sb-8"],
+    "brand": "WireMaster",
+    "price": {
+      "type": "fixed",
+      "amount": 1.2,
+      "currency": "USD"
+    },
+    "stockStatus": "in-stock",
+    "images": [],
+    "specifications": [
+      { "label": "Diameter", "value": "1/2 inch" },
+      { "label": "Material", "value": "Polyethylene" },
+      { "label": "Price Unit", "value": "Per foot" }
+    ]
+  },
+  {
+    "id": "prod-039",
+    "name": "Panel Mount Voltmeter Digital",
+    "slug": "panel-voltmeter-digital",
+    "partNumber": "VM-DIG-12V",
+    "description": "Digital voltmeter for electrical panels",
+    "fullDescription": "Compact digital voltmeter with LED display. 2-inch round panel mount. Monitors 8-32V DC range.",
+    "categoryIds": ["cr-3", "cr-3-sb-9"],
+    "brand": "MarineNav",
+    "price": {
+      "type": "fixed",
+      "amount": 42,
+      "currency": "USD"
+    },
+    "stockStatus": "in-stock",
+    "images": [],
+    "specifications": [
+      { "label": "Display", "value": "LED digital" },
+      { "label": "Range", "value": "8-32V DC" },
+      { "label": "Size", "value": "2 inch round" }
+    ]
+  },
+  {
+    "id": "prod-040",
+    "name": "Freshwater Pressure Pump 4.5 GPM",
+    "slug": "freshwater-pressure-pump-45gpm",
+    "partNumber": "PP-45GPM-12V",
+    "description": "Self-priming freshwater pressure pump",
+    "fullDescription": "Quiet-running diaphragm pressure pump delivering 4.5 GPM at 45 PSI. Self-priming up to 6 feet. Ideal for galleys and heads.",
+    "categoryIds": ["cr-4", "cr-4-sb-2"],
+    "brand": "BilgePro",
+    "price": {
+      "type": "fixed",
+      "amount": 185,
+      "currency": "USD"
+    },
+    "stockStatus": "in-stock",
+    "images": [],
+    "specifications": [
+      { "label": "Flow Rate", "value": "4.5 GPM" },
+      { "label": "Pressure", "value": "45 PSI" },
+      { "label": "Voltage", "value": "12V DC" },
+      { "label": "Self-Priming", "value": "Up to 6 feet" }
+    ]
+  },
+  {
+    "id": "prod-041",
+    "name": "Bronze Seawater Strainer 1 inch",
+    "slug": "bronze-seawater-strainer-1in",
+    "partNumber": "STR-BRZ-1IN",
+    "description": "Bronze raw water strainer with clear bowl",
+    "fullDescription": "Heavy-duty bronze strainer for engine cooling water intake. Clear polycarbonate bowl for easy inspection. 1-inch NPT connections.",
+    "categoryIds": ["cr-4", "cr-4-sb-3"],
+    "brand": "ShaftTech",
+    "price": {
+      "type": "fixed",
+      "amount": 125,
+      "currency": "USD"
+    },
+    "stockStatus": "in-stock",
+    "images": [],
+    "specifications": [
+      { "label": "Material", "value": "Bronze" },
+      { "label": "Connection", "value": "1 inch NPT" },
+      { "label": "Bowl", "value": "Clear polycarbonate" }
+    ]
+  },
+  {
+    "id": "prod-042",
+    "name": "Brass Pipe Elbow 90° 1/2 inch",
+    "slug": "brass-elbow-90-half-inch",
+    "partNumber": "BRS-ELB-90-12",
+    "description": "90-degree brass pipe elbow fitting",
+    "fullDescription": "Marine-grade brass 90-degree elbow with 1/2-inch NPT threads. Corrosion-resistant for freshwater and seawater systems.",
+    "categoryIds": ["cr-4", "cr-4-sb-4"],
+    "brand": "PlumbMarine",
+    "price": {
+      "type": "fixed",
+      "amount": 8.5,
+      "currency": "USD"
+    },
+    "stockStatus": "in-stock",
+    "images": [],
+    "specifications": [
+      { "label": "Size", "value": "1/2 inch NPT" },
+      { "label": "Angle", "value": "90 degrees" },
+      { "label": "Material", "value": "Marine brass" }
+    ]
+  },
+  {
+    "id": "prod-043",
+    "name": "Bronze Ball Valve 3/4 inch",
+    "slug": "bronze-ball-valve-34in",
+    "partNumber": "VLV-BBL-34",
+    "description": "Full-port bronze ball valve",
+    "fullDescription": "Heavy-duty bronze ball valve with lever handle. Full-port design for maximum flow. 3/4-inch NPT threaded connections.",
+    "categoryIds": ["cr-4", "cr-4-sb-5"],
+    "brand": "PlumbMarine",
+    "price": {
+      "type": "fixed",
+      "amount": 45,
+      "currency": "USD"
+    },
+    "stockStatus": "in-stock",
+    "images": [],
+    "specifications": [
+      { "label": "Size", "value": "3/4 inch NPT" },
+      { "label": "Type", "value": "Full-port ball valve" },
+      { "label": "Material", "value": "Bronze" }
+    ]
+  },
+  {
+    "id": "prod-044",
+    "name": "Quick Connect Coupling Set 1/2 inch",
+    "slug": "quick-connect-coupling-half-inch",
+    "partNumber": "QC-SET-12",
+    "description": "Quick-disconnect hose coupling set",
+    "fullDescription": "Stainless steel quick-connect coupling for easy hose connection/disconnection. Includes male and female fittings. 1/2-inch hose barb.",
+    "categoryIds": ["cr-4", "cr-4-sb-7"],
+    "brand": "PlumbMarine",
+    "price": {
+      "type": "fixed",
+      "amount": 28,
+      "currency": "USD"
+    },
+    "stockStatus": "in-stock",
+    "images": [],
+    "specifications": [
+      { "label": "Size", "value": "1/2 inch" },
+      { "label": "Material", "value": "Stainless steel" },
+      { "label": "Type", "value": "Quick-disconnect" }
+    ]
+  },
+  {
+    "id": "prod-045",
+    "name": "Speedfit Push-Fit Elbow 15mm",
+    "slug": "speedfit-elbow-15mm",
+    "partNumber": "SF-ELB-15",
+    "description": "Push-fit plumbing elbow connector",
+    "fullDescription": "Quick and easy push-fit elbow for 15mm pipe. No tools required. Suitable for potable water systems.",
+    "categoryIds": ["cr-4", "cr-4-sb-8"],
+    "brand": "SpeedPlumb",
+    "price": {
+      "type": "fixed",
+      "amount": 6.5,
+      "currency": "USD"
+    },
+    "stockStatus": "in-stock",
+    "images": [],
+    "specifications": [
+      { "label": "Size", "value": "15mm" },
+      { "label": "Type", "value": "Push-fit elbow" },
+      { "label": "Installation", "value": "No tools required" }
+    ]
+  },
+  {
+    "id": "prod-046",
+    "name": "Wet Exhaust Hose 4 inch",
+    "slug": "wet-exhaust-hose-4in",
+    "partNumber": "EXH-WET-4IN",
+    "description": "Heavy-duty wet exhaust hose",
+    "fullDescription": "Reinforced rubber wet exhaust hose for marine diesel engines. Heat and salt-water resistant. Sold per foot. 4-inch ID.",
+    "categoryIds": ["cr-4", "cr-4-sb-9"],
+    "brand": "EnginePro",
+    "price": {
+      "type": "fixed",
+      "amount": 18,
+      "currency": "USD"
+    },
+    "stockStatus": "in-stock",
+    "images": [],
+    "specifications": [
+      { "label": "Inner Diameter", "value": "4 inch" },
+      { "label": "Type", "value": "Wet exhaust" },
+      { "label": "Price Unit", "value": "Per foot" }
+    ]
+  },
+  {
+    "id": "prod-047",
+    "name": "Washdown Hose Nozzle Adjustable",
+    "slug": "washdown-nozzle-adjustable",
+    "partNumber": "WD-NZL-ADJ",
+    "description": "Adjustable spray nozzle for deck washdown",
+    "fullDescription": "Brass adjustable spray nozzle with multiple spray patterns. Ergonomic grip with trigger lock. Standard garden hose connection.",
+    "categoryIds": ["cr-4", "cr-4-sb-10"],
+    "brand": "DeckMaster",
+    "price": {
+      "type": "fixed",
+      "amount": 32,
+      "currency": "USD"
+    },
+    "stockStatus": "in-stock",
+    "images": [],
+    "specifications": [
+      { "label": "Material", "value": "Brass body" },
+      { "label": "Patterns", "value": "Multiple spray" },
+      { "label": "Connection", "value": "Standard garden hose" }
+    ]
+  },
+  {
+    "id": "prod-048",
+    "name": "Bilge Pump Float Switch",
+    "slug": "bilge-pump-float-switch",
+    "partNumber": "BP-FS-AUTO",
+    "description": "Automatic float switch for bilge pumps",
+    "fullDescription": "Mercury-free automatic float switch for bilge pump activation. Adjustable mounting bracket. 20A rating.",
+    "categoryIds": ["cr-4", "cr-4-sb-11"],
+    "brand": "BilgePro",
+    "price": {
+      "type": "fixed",
+      "amount": 38,
+      "currency": "USD"
+    },
+    "stockStatus": "in-stock",
+    "images": [],
+    "specifications": [
+      { "label": "Type", "value": "Automatic float" },
+      { "label": "Rating", "value": "20A" },
+      { "label": "Mercury", "value": "Mercury-free" }
+    ]
+  },
+  {
+    "id": "prod-049",
+    "name": "Reinforced Water Hose 5/8 inch",
+    "slug": "reinforced-water-hose-58in",
+    "partNumber": "HSE-WTR-58",
+    "description": "Reinforced potable water hose",
+    "fullDescription": "FDA-approved reinforced hose for potable water systems. Kink-resistant construction. Sold per foot. 5/8-inch ID.",
+    "categoryIds": ["cr-4", "cr-4-sb-12"],
+    "brand": "PlumbMarine",
+    "price": {
+      "type": "fixed",
+      "amount": 3.5,
+      "currency": "USD"
+    },
+    "stockStatus": "in-stock",
+    "images": [],
+    "specifications": [
+      { "label": "Inner Diameter", "value": "5/8 inch" },
+      { "label": "Certification", "value": "FDA approved" },
+      { "label": "Price Unit", "value": "Per foot" }
+    ]
+  },
+  {
+    "id": "prod-050",
+    "name": "Stainless Hose Clamp 1-2 inch",
+    "slug": "ss-hose-clamp-1-2in",
+    "partNumber": "CLM-SS-1-2",
+    "description": "Stainless steel hose clamp",
+    "fullDescription": "Marine-grade 316 stainless steel hose clamp. Adjustable 1-2 inch diameter range. Hex screw for easy tightening.",
+    "categoryIds": ["cr-4", "cr-4-sb-13"],
+    "brand": "DeckMaster",
+    "price": {
+      "type": "fixed",
+      "amount": 2.8,
+      "currency": "USD"
+    },
+    "stockStatus": "in-stock",
+    "images": [],
+    "specifications": [
+      { "label": "Material", "value": "316 stainless steel" },
+      { "label": "Range", "value": "1-2 inch" },
+      { "label": "Screw Type", "value": "Hex head" }
+    ]
+  },
+  {
+    "id": "prod-051",
+    "name": "Plastic Barbed Tee 1/2 inch",
+    "slug": "plastic-barbed-tee-half-inch",
+    "partNumber": "PLB-TEE-12",
+    "description": "Plastic hose barb tee fitting",
+    "fullDescription": "Nylon barbed tee fitting for 1/2-inch hose. Lightweight and corrosion-proof. Suitable for freshwater systems.",
+    "categoryIds": ["cr-4", "cr-4-sb-14"],
+    "brand": "PlumbMarine",
+    "price": {
+      "type": "fixed",
+      "amount": 3.2,
+      "currency": "USD"
+    },
+    "stockStatus": "in-stock",
+    "images": [],
+    "specifications": [
+      { "label": "Size", "value": "1/2 inch barb" },
+      { "label": "Material", "value": "Nylon" },
+      { "label": "Type", "value": "Tee fitting" }
+    ]
+  },
+  {
+    "id": "prod-052",
+    "name": "Transom Drain Plug Brass",
+    "slug": "transom-drain-plug-brass",
+    "partNumber": "DRN-PLG-BRS",
+    "description": "Brass transom drain plug",
+    "fullDescription": "Threaded brass drain plug for transom or cockpit drains. Includes rubber gasket. 1/2-inch NPT thread.",
+    "categoryIds": ["cr-4", "cr-4-sb-15"],
+    "brand": "DeckMaster",
+    "price": {
+      "type": "fixed",
+      "amount": 12,
+      "currency": "USD"
+    },
+    "stockStatus": "in-stock",
+    "images": [],
+    "specifications": [
+      { "label": "Material", "value": "Brass" },
+      { "label": "Thread", "value": "1/2 inch NPT" },
+      { "label": "Includes", "value": "Rubber gasket" }
+    ]
+  },
+  {
+    "id": "prod-053",
+    "name": "Manual Marine Toilet Compact",
+    "slug": "manual-marine-toilet-compact",
+    "partNumber": "TLT-MAN-CPT",
+    "description": "Compact manual marine toilet",
+    "fullDescription": "Space-saving manual marine toilet with hand pump operation. Porcelain bowl. Suitable for small vessels and sailboats.",
+    "categoryIds": ["cr-5", "cr-5-sb-1", "cr-5-sb-2"],
+    "brand": "SaniMarine",
+    "price": {
+      "type": "fixed",
+      "amount": 385,
+      "currency": "USD"
+    },
+    "stockStatus": "in-stock",
+    "images": [],
+    "specifications": [
+      { "label": "Type", "value": "Manual pump" },
+      { "label": "Bowl", "value": "Porcelain" },
+      { "label": "Size", "value": "Compact" }
+    ]
+  },
+  {
+    "id": "prod-054",
+    "name": "Electric Marine Toilet 12V",
+    "slug": "electric-marine-toilet-12v",
+    "partNumber": "TLT-ELC-12V",
+    "description": "Electric flush marine toilet",
+    "fullDescription": "Quiet electric marine toilet with push-button operation. Soft-close seat. Low water consumption. 12V DC operation.",
+    "categoryIds": ["cr-5", "cr-5-sb-1", "cr-5-sb-2"],
+    "brand": "SaniMarine",
+    "price": {
+      "type": "fixed",
+      "amount": 895,
+      "currency": "USD"
+    },
+    "stockStatus": "in-stock",
+    "images": [],
+    "specifications": [
+      { "label": "Type", "value": "Electric flush" },
+      { "label": "Voltage", "value": "12V DC" },
+      { "label": "Features", "value": "Soft-close seat, quiet operation" }
+    ]
+  },
+  {
+    "id": "prod-055",
+    "name": "Toilet Pump Rebuild Kit",
+    "slug": "toilet-pump-rebuild-kit",
+    "partNumber": "TLT-RBK-STD",
+    "description": "Universal toilet pump service kit",
+    "fullDescription": "Complete rebuild kit for manual marine toilets. Includes seals, gaskets, and valves. Fits most standard models.",
+    "categoryIds": ["cr-5", "cr-5-sb-3"],
+    "brand": "SaniMarine",
+    "price": {
+      "type": "fixed",
+      "amount": 45,
+      "currency": "USD"
+    },
+    "stockStatus": "in-stock",
+    "images": [],
+    "specifications": [
+      { "label": "Type", "value": "Rebuild kit" },
+      { "label": "Includes", "value": "Seals, gaskets, valves" },
+      { "label": "Compatibility", "value": "Most standard models" }
+    ]
+  },
+  {
+    "id": "prod-056",
+    "name": "Stainless Steel Bow Eye",
+    "slug": "stainless-bow-eye",
+    "partNumber": "HW-BEYE-SS",
+    "description": "Heavy-duty stainless steel bow eye",
+    "fullDescription": "AISI 316 stainless steel bow eye for anchor rode attachment. Through-bolt mounting. 3/4-inch diameter eye.",
+    "categoryIds": ["cr-6", "cr-6-sb-2"],
+    "brand": "DeckMaster",
+    "price": {
+      "type": "fixed",
+      "amount": 38,
+      "currency": "USD"
+    },
+    "stockStatus": "in-stock",
+    "images": [],
+    "specifications": [
+      { "label": "Material", "value": "316 stainless steel" },
+      { "label": "Eye Diameter", "value": "3/4 inch" },
+      { "label": "Mounting", "value": "Through-bolt" }
+    ]
+  },
+  {
+    "id": "prod-057",
+    "name": "Stainless Shackle Bow 5/16 inch",
+    "slug": "ss-shackle-bow-516",
+    "partNumber": "RIG-SHK-516",
+    "description": "Bow shackle with screw pin",
+    "fullDescription": "Marine-grade stainless steel bow shackle. Screw pin closure. 5/16-inch diameter. 1500 lb working load.",
+    "categoryIds": ["cr-6", "cr-6-sb-3"],
+    "brand": "RigMaster",
+    "price": {
+      "type": "fixed",
+      "amount": 12,
+      "currency": "USD"
+    },
+    "stockStatus": "in-stock",
+    "images": [],
+    "specifications": [
+      { "label": "Size", "value": "5/16 inch" },
+      { "label": "Type", "value": "Bow shackle, screw pin" },
+      { "label": "Working Load", "value": "1500 lb" }
+    ]
+  },
+  {
+    "id": "prod-058",
+    "name": "Solar Vent Cowl Stainless",
+    "slug": "solar-vent-cowl-ss",
+    "partNumber": "VNT-COWL-SS",
+    "description": "Stainless steel ventilation cowl",
+    "fullDescription": "Polished stainless steel deck vent cowl. Directional design for optimal airflow. 3-inch deck fitting required.",
+    "categoryIds": ["cr-6", "cr-6-sb-4"],
+    "brand": "VentPro",
+    "price": {
+      "type": "fixed",
+      "amount": 65,
+      "currency": "USD"
+    },
+    "stockStatus": "in-stock",
+    "images": [],
+    "specifications": [
+      { "label": "Material", "value": "Stainless steel" },
+      { "label": "Size", "value": "3 inch" },
+      { "label": "Type", "value": "Directional cowl" }
+    ]
+  },
+  {
+    "id": "prod-059",
+    "name": "Deck Access Hatch 12x12 inch",
+    "slug": "deck-hatch-12x12",
+    "partNumber": "HTH-12X12-WH",
+    "description": "Watertight deck access hatch",
+    "fullDescription": "White ABS deck hatch with watertight seal. Flush-mount design. 12x12 inch opening. Includes mounting screws.",
+    "categoryIds": ["cr-6", "cr-6-sb-5"],
+    "brand": "DeckMaster",
+    "price": {
+      "type": "fixed",
+      "amount": 85,
+      "currency": "USD"
+    },
+    "stockStatus": "in-stock",
+    "images": [],
+    "specifications": [
+      { "label": "Size", "value": "12x12 inch" },
+      { "label": "Material", "value": "ABS plastic" },
+      { "label": "Type", "value": "Watertight, flush-mount" }
+    ]
+  },
+  {
+    "id": "prod-060",
+    "name": "Deck Plate 6 inch Screw-Out",
+    "slug": "deck-plate-6in-screw",
+    "partNumber": "DPL-6IN-SCR",
+    "description": "6-inch screw-out deck plate",
+    "fullDescription": "White plastic screw-out deck plate for tank and storage access. O-ring seal. 6-inch diameter.",
+    "categoryIds": ["cr-6", "cr-6-sb-6"],
+    "brand": "DeckMaster",
+    "price": {
+      "type": "fixed",
+      "amount": 18,
+      "currency": "USD"
+    },
+    "stockStatus": "in-stock",
+    "images": [],
+    "specifications": [
+      { "label": "Diameter", "value": "6 inch" },
+      { "label": "Type", "value": "Screw-out" },
+      { "label": "Seal", "value": "O-ring" }
+    ]
+  },
+  {
+    "id": "prod-061",
+    "name": "Telescoping Swim Ladder 3-Step",
+    "slug": "swim-ladder-3step-telescoping",
+    "partNumber": "LDR-SWM-3ST",
+    "description": "Stainless steel telescoping swim ladder",
+    "fullDescription": "3-step telescoping swim ladder with stainless steel construction. Folds flat when not in use. Transom mount.",
+    "categoryIds": ["cr-6", "cr-6-sb-7"],
+    "brand": "DeckMaster",
+    "price": {
+      "type": "fixed",
+      "amount": 195,
+      "currency": "USD"
+    },
+    "stockStatus": "in-stock",
+    "images": [],
+    "specifications": [
+      { "label": "Steps", "value": "3" },
+      { "label": "Material", "value": "Stainless steel" },
+      { "label": "Type", "value": "Telescoping, transom mount" }
+    ]
+  },
+  {
+    "id": "prod-062",
+    "name": "Rod Holder Flush Mount SS",
+    "slug": "rod-holder-flush-mount",
+    "partNumber": "ACC-RH-FM-SS",
+    "description": "Flush-mount stainless fishing rod holder",
+    "fullDescription": "Stainless steel flush-mount rod holder. 15-degree angle. Includes drain holes and cap. Standard 1.9-inch tube.",
+    "categoryIds": ["cr-6", "cr-6-sb-8"],
+    "brand": "DeckMaster",
+    "price": {
+      "type": "fixed",
+      "amount": 42,
+      "currency": "USD"
+    },
+    "stockStatus": "in-stock",
+    "images": [],
+    "specifications": [
+      { "label": "Material", "value": "Stainless steel" },
+      { "label": "Angle", "value": "15 degrees" },
+      { "label": "Type", "value": "Flush-mount" }
+    ]
+  },
+  {
+    "id": "prod-063",
+    "name": "Inflatable Fender 8x20 inch",
+    "slug": "inflatable-fender-8x20",
+    "partNumber": "FND-INF-8X20-BL",
+    "description": "Heavy-duty inflatable boat fender",
+    "fullDescription": "Blue vinyl inflatable fender with reinforced eye. 8-inch diameter, 20-inch length. Includes inflation valve.",
+    "categoryIds": ["cr-7", "cr-7-sb-1"],
+    "brand": "DockSafe",
+    "price": {
+      "type": "fixed",
+      "amount": 35,
+      "currency": "USD"
+    },
+    "stockStatus": "in-stock",
+    "images": [],
+    "specifications": [
+      { "label": "Size", "value": "8x20 inch" },
+      { "label": "Material", "value": "Reinforced vinyl" },
+      { "label": "Color", "value": "Blue" }
+    ]
+  },
+  {
+    "id": "prod-064",
+    "name": "Fender Cover 8 inch Navy",
+    "slug": "fender-cover-8in-navy",
+    "partNumber": "FNC-8IN-NVY",
+    "description": "Protective fender cover",
+    "fullDescription": "Navy blue acrylic fender cover for 8-inch fenders. Protects fender and hull from scuffing. Machine washable.",
+    "categoryIds": ["cr-7", "cr-7-sb-2"],
+    "brand": "DockSafe",
+    "price": {
+      "type": "fixed",
+      "amount": 22,
+      "currency": "USD"
+    },
+    "stockStatus": "in-stock",
+    "images": [],
+    "specifications": [
+      { "label": "Size", "value": "Fits 8 inch fenders" },
+      { "label": "Material", "value": "Acrylic" },
+      { "label": "Color", "value": "Navy blue" }
+    ]
+  },
+  {
+    "id": "prod-065",
+    "name": "Dock Line 5/8 inch x 25 ft",
+    "slug": "dock-line-58-x-25ft",
+    "partNumber": "DL-58-25-WHT",
+    "description": "Double-braided nylon dock line",
+    "fullDescription": "Premium double-braided nylon dock line with pre-spliced eye. UV-resistant. 5/8-inch diameter, 25 feet long.",
+    "categoryIds": ["cr-7", "cr-7-sb-3"],
+    "brand": "DockSafe",
+    "price": {
+      "type": "fixed",
+      "amount": 48,
+      "currency": "USD"
+    },
+    "stockStatus": "in-stock",
+    "images": [],
+    "specifications": [
+      { "label": "Diameter", "value": "5/8 inch" },
+      { "label": "Length", "value": "25 feet" },
+      { "label": "Material", "value": "Double-braided nylon" },
+      { "label": "Features", "value": "Pre-spliced eye" }
+    ]
+  },
+  {
+    "id": "prod-066",
+    "name": "Marker Buoy Float Orange",
+    "slug": "marker-buoy-orange",
+    "partNumber": "FLT-MKR-ORG",
+    "description": "High-visibility marker float",
+    "fullDescription": "Bright orange foam marker float. Unsinkable construction. Ideal for crab pots, anchor lines, and markers.",
+    "categoryIds": ["cr-7", "cr-7-sb-5"],
+    "brand": "DockSafe",
+    "price": {
+      "type": "fixed",
+      "amount": 12,
+      "currency": "USD"
+    },
+    "stockStatus": "in-stock",
+    "images": [],
+    "specifications": [
+      { "label": "Color", "value": "Orange" },
+      { "label": "Material", "value": "Foam" },
+      { "label": "Features", "value": "Unsinkable" }
+    ]
+  },
+  {
+    "id": "prod-067",
+    "name": "Trailer Winch 1500 lb",
+    "slug": "trailer-winch-1500lb",
+    "partNumber": "TRL-WCH-1500",
+    "description": "Manual boat trailer winch",
+    "fullDescription": "Heavy-duty manual winch with 1500 lb capacity. Includes 20 feet of strap and hook. Corrosion-resistant finish.",
+    "categoryIds": ["cr-7", "cr-7-sb-6"],
+    "brand": "TrailerPro",
+    "price": {
+      "type": "fixed",
+      "amount": 75,
+      "currency": "USD"
+    },
+    "stockStatus": "in-stock",
+    "images": [],
+    "specifications": [
+      { "label": "Capacity", "value": "1500 lb" },
+      { "label": "Strap Length", "value": "20 feet" },
+      { "label": "Type", "value": "Manual winch" }
+    ]
+  },
+  {
+    "id": "prod-068",
+    "name": "Marine Stereo Bluetooth Receiver",
+    "slug": "marine-stereo-bluetooth",
+    "partNumber": "AUD-STR-BT",
+    "description": "Waterproof Bluetooth marine stereo",
+    "fullDescription": "IPX6 waterproof marine stereo with Bluetooth streaming. USB input and AM/FM radio. 4x50W amplifier output.",
+    "categoryIds": ["cr-8", "cr-8-sb-2"],
+    "brand": "SoundWave",
+    "price": {
+      "type": "fixed",
+      "amount": 185,
+      "currency": "USD"
+    },
+    "stockStatus": "in-stock",
+    "images": [],
+    "specifications": [
+      { "label": "Waterproof", "value": "IPX6" },
+      { "label": "Features", "value": "Bluetooth, USB, AM/FM" },
+      { "label": "Power", "value": "4x50W" }
+    ]
+  },
+  {
+    "id": "prod-069",
+    "name": "Marine Speakers 6.5 inch Pair",
+    "slug": "marine-speakers-65in-pair",
+    "partNumber": "SPK-65-PR-WH",
+    "description": "Waterproof coaxial marine speakers",
+    "fullDescription": "6.5-inch 2-way coaxial speakers with UV-resistant white cones. 150W peak power. Stainless steel mounting hardware included.",
+    "categoryIds": ["cr-8", "cr-8-sb-3"],
+    "brand": "SoundWave",
+    "price": {
+      "type": "fixed",
+      "amount": 95,
+      "currency": "USD"
+    },
+    "stockStatus": "in-stock",
+    "images": [],
+    "specifications": [
+      { "label": "Size", "value": "6.5 inch" },
+      { "label": "Power", "value": "150W peak" },
+      { "label": "Type", "value": "2-way coaxial" },
+      { "label": "Quantity", "value": "Pair" }
+    ]
+  },
+  {
+    "id": "prod-070",
+    "name": "Lifebuoy Ring 24 inch SOLAS",
+    "slug": "lifebuoy-ring-24in-solas",
+    "partNumber": "LBR-24-SOLAS-ORG",
+    "description": "SOLAS-approved lifebuoy ring",
+    "fullDescription": "24-inch diameter lifebuoy ring with SOLAS approval. High-visibility orange with reflective tape. Includes grab line.",
+    "categoryIds": ["cr-9", "cr-9-sb-2"],
+    "brand": "SafeMarine",
+    "price": {
+      "type": "fixed",
+      "amount": 85,
+      "currency": "USD"
+    },
+    "stockStatus": "in-stock",
+    "images": [],
+    "specifications": [
+      { "label": "Diameter", "value": "24 inch" },
+      { "label": "Certification", "value": "SOLAS" },
+      { "label": "Color", "value": "Orange with reflective tape" }
+    ]
+  },
+  {
+    "id": "prod-071",
+    "name": "Safety Harness with Tether",
+    "slug": "safety-harness-tether",
+    "partNumber": "SFT-HRN-TTH",
+    "description": "Adjustable safety harness with lifeline",
+    "fullDescription": "Adjustable safety harness with 6-foot tether and double clips. Meets ISO 12401 standard. Suitable for offshore sailing.",
+    "categoryIds": ["cr-9", "cr-9-sb-3"],
+    "brand": "SafeMarine",
+    "price": {
+      "type": "fixed",
+      "amount": 125,
+      "currency": "USD"
+    },
+    "stockStatus": "in-stock",
+    "images": [],
+    "specifications": [
+      { "label": "Tether Length", "value": "6 feet" },
+      { "label": "Certification", "value": "ISO 12401" },
+      { "label": "Features", "value": "Double clips, adjustable" }
+    ]
+  },
+  {
+    "id": "prod-072",
+    "name": "Hydraulic Steering System Kit",
+    "slug": "hydraulic-steering-kit",
+    "partNumber": "STR-HYD-KIT",
+    "description": "Complete hydraulic steering kit for outboards",
+    "fullDescription": "Complete hydraulic steering system for outboard motors up to 150HP. Includes helm pump, cylinder, and hoses. Smooth, responsive steering.",
+    "categoryIds": ["cr-10", "cr-10-sb-2"],
+    "brand": "NavTech",
+    "price": {
+      "type": "fixed",
+      "amount": 485,
+      "currency": "USD"
+    },
+    "stockStatus": "in-stock",
+    "images": [],
+    "specifications": [
+      { "label": "Type", "value": "Hydraulic" },
+      { "label": "Capacity", "value": "Up to 150HP" },
+      { "label": "Includes", "value": "Helm, cylinder, hoses" }
+    ]
+  },
+  {
+    "id": "prod-073",
+    "name": "Flush Mount Compass 3 inch",
+    "slug": "compass-flush-mount-3in",
+    "partNumber": "CMP-FM-3IN",
+    "description": "Flush-mount marine compass",
+    "fullDescription": "3-inch flush-mount compass with internally gimbaled card. Compensator magnets included. Black housing with white card.",
+    "categoryIds": ["cr-10", "cr-10-sb-3"],
+    "brand": "NavTech",
+    "price": {
+      "type": "fixed",
+      "amount": 75,
+      "currency": "USD"
+    },
+    "stockStatus": "in-stock",
+    "images": [],
+    "specifications": [
+      { "label": "Size", "value": "3 inch" },
+      { "label": "Type", "value": "Flush-mount, gimbaled" },
+      { "label": "Features", "value": "Compensator magnets" }
+    ]
+  },
+  {
+    "id": "prod-074",
+    "name": "Fuel Deck Fill with Cap Stainless",
+    "slug": "fuel-deck-fill-ss",
+    "partNumber": "FDF-SS-1.5",
+    "description": "Stainless steel fuel deck fill",
+    "fullDescription": "316 stainless steel fuel deck fill with locking cap. 1.5-inch hose connection. Clearly marked 'FUEL'.",
+    "categoryIds": ["cr-12", "cr-12-sb-2"],
+    "brand": "FuelTech",
+    "price": {
+      "type": "fixed",
+      "amount": 55,
+      "currency": "USD"
+    },
+    "stockStatus": "in-stock",
+    "images": [],
+    "specifications": [
+      { "label": "Material", "value": "316 stainless steel" },
+      { "label": "Connection", "value": "1.5 inch hose" },
+      { "label": "Features", "value": "Locking cap, marked FUEL" }
+    ]
+  },
+  {
+    "id": "prod-075",
+    "name": "Fuel Line Primer Bulb 3/8 inch",
+    "slug": "fuel-primer-bulb-38in",
+    "partNumber": "FPB-38-STD",
+    "description": "Universal fuel primer bulb",
+    "fullDescription": "Universal fuel primer bulb for outboard motors. 3/8-inch hose connections. Ethanol-resistant construction.",
+    "categoryIds": ["cr-12", "cr-12-sb-3"],
+    "brand": "FuelTech",
+    "price": {
+      "type": "fixed",
+      "amount": 18,
+      "currency": "USD"
+    },
+    "stockStatus": "in-stock",
+    "images": [],
+    "specifications": [
+      { "label": "Size", "value": "3/8 inch" },
+      { "label": "Type", "value": "Primer bulb" },
+      { "label": "Features", "value": "Ethanol-resistant" }
+    ]
+  },
+  {
+    "id": "prod-076",
+    "name": "Boat Wash and Wax 32oz",
+    "slug": "boat-wash-wax-32oz",
+    "partNumber": "CLN-WSH-32",
+    "description": "Premium boat wash and wax formula",
+    "fullDescription": "Concentrated boat wash with carnauba wax. Removes salt, dirt, and grime while leaving protective shine. Biodegradable formula.",
+    "categoryIds": ["cr-13", "cr-13-sb-1"],
+    "brand": "MarineClean",
+    "price": {
+      "type": "fixed",
+      "amount": 24,
+      "currency": "USD"
+    },
+    "stockStatus": "in-stock",
+    "images": [],
+    "specifications": [
+      { "label": "Size", "value": "32 oz" },
+      { "label": "Type", "value": "Wash and wax" },
+      { "label": "Features", "value": "Biodegradable, concentrated" }
+    ]
+  },
+  {
+    "id": "prod-077",
+    "name": "Deck Brush with Handle",
+    "slug": "deck-brush-handle",
+    "partNumber": "CLN-BRH-DCK",
+    "description": "Stiff-bristle deck scrub brush",
+    "fullDescription": "Heavy-duty deck brush with stiff bristles and 48-inch handle. Ideal for non-skid surfaces. Threaded handle connection.",
+    "categoryIds": ["cr-13", "cr-13-sb-2"],
+    "brand": "MarineClean",
+    "price": {
+      "type": "fixed",
+      "amount": 32,
+      "currency": "USD"
+    },
+    "stockStatus": "in-stock",
+    "images": [],
+    "specifications": [
+      { "label": "Bristles", "value": "Stiff" },
+      { "label": "Handle Length", "value": "48 inch" },
+      { "label": "Type", "value": "Deck scrub brush" }
+    ]
+  },
+  {
+    "id": "prod-078",
+    "name": "Marine Sealant 3M 5200 3oz",
+    "slug": "marine-sealant-3m-5200",
+    "partNumber": "ADH-5200-3OZ",
+    "description": "Permanent marine adhesive sealant",
+    "fullDescription": "3M 5200 marine-grade polyurethane adhesive sealant. Permanent, flexible bond. Excellent for hull-to-deck joints and hardware mounting.",
+    "categoryIds": ["cr-13", "cr-13-sb-3"],
+    "brand": "3M Marine",
+    "price": {
+      "type": "fixed",
+      "amount": 18,
+      "currency": "USD"
+    },
+    "stockStatus": "in-stock",
+    "images": [],
+    "specifications": [
+      { "label": "Size", "value": "3 oz tube" },
+      { "label": "Type", "value": "Polyurethane adhesive" },
+      { "label": "Bond", "value": "Permanent, flexible" }
+    ]
+  },
+  {
+    "id": "prod-079",
+    "name": "Zinc Anode Shaft Collar 1 inch",
+    "slug": "zinc-anode-shaft-1in",
+    "partNumber": "AND-ZNC-SHF-1",
+    "description": "Sacrificial zinc shaft anode",
+    "fullDescription": "Zinc shaft anode for 1-inch propeller shafts. Prevents galvanic corrosion. Split collar design for easy installation.",
+    "categoryIds": ["cr-13", "cr-13-sb-4"],
+    "brand": "CorrosionGuard",
+    "price": {
+      "type": "fixed",
+      "amount": 22,
+      "currency": "USD"
+    },
+    "stockStatus": "in-stock",
+    "images": [],
+    "specifications": [
+      { "label": "Material", "value": "Zinc" },
+      { "label": "Shaft Size", "value": "1 inch" },
+      { "label": "Type", "value": "Split collar" }
+    ]
+  },
+  {
+    "id": "prod-080",
+    "name": "Marine Grease Waterproof 14oz",
+    "slug": "marine-grease-14oz",
+    "partNumber": "LUB-GRS-14",
+    "description": "Waterproof marine bearing grease",
+    "fullDescription": "Premium waterproof grease for marine bearings and fittings. Resists washout. NLGI Grade 2. 14 oz cartridge.",
+    "categoryIds": ["cr-13", "cr-13-sb-5"],
+    "brand": "MarineLube",
+    "price": {
+      "type": "fixed",
+      "amount": 16,
+      "currency": "USD"
+    },
+    "stockStatus": "in-stock",
+    "images": [],
+    "specifications": [
+      { "label": "Size", "value": "14 oz cartridge" },
+      { "label": "Grade", "value": "NLGI 2" },
+      { "label": "Features", "value": "Waterproof, resists washout" }
+    ]
+  },
+  {
+    "id": "prod-081",
+    "name": "Gelcoat Repair Kit White",
+    "slug": "gelcoat-repair-kit-white",
+    "partNumber": "FIL-GEL-WHT",
+    "description": "Gelcoat filler and repair kit",
+    "fullDescription": "Complete gelcoat repair kit in white. Includes resin, hardener, and mixing tools. Repairs chips, scratches, and gouges.",
+    "categoryIds": ["cr-13", "cr-13-sb-6"],
+    "brand": "MarineFix",
+    "price": {
+      "type": "fixed",
+      "amount": 38,
+      "currency": "USD"
+    },
+    "stockStatus": "in-stock",
+    "images": [],
+    "specifications": [
+      { "label": "Color", "value": "White" },
+      { "label": "Includes", "value": "Resin, hardener, tools" },
+      { "label": "Use", "value": "Chips, scratches, gouges" }
+    ]
+  },
+  {
+    "id": "prod-082",
+    "name": "Antifouling Paint Blue 1 Quart",
+    "slug": "antifouling-paint-blue-1qt",
+    "partNumber": "PNT-AF-BLU-1Q",
+    "description": "Self-polishing antifouling bottom paint",
+    "fullDescription": "High-performance self-polishing antifouling paint. Prevents marine growth on hulls. Blue color. 1 quart covers approximately 100 sq ft.",
+    "categoryIds": ["cr-13", "cr-13-sb-7"],
+    "brand": "MarinePaint",
+    "price": {
+      "type": "fixed",
+      "amount": 65,
+      "currency": "USD"
+    },
+    "stockStatus": "in-stock",
+    "images": [],
+    "specifications": [
+      { "label": "Size", "value": "1 quart" },
+      { "label": "Type", "value": "Self-polishing antifouling" },
+      { "label": "Color", "value": "Blue" },
+      { "label": "Coverage", "value": "~100 sq ft" }
+    ]
   }
 ]

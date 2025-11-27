@@ -15,12 +15,14 @@ import Breadcrumbs from '@/components/layout/Breadcrumbs';
 export default function CartPage() {
   const { cart, updateQuantity, removeFromCart, clearCart } = useCart();
 
-  // Format price
+  // Format price and convert to AED
   const formatPrice = (amount: number, currency: string = 'USD') => {
-    return new Intl.NumberFormat('en-US', {
+    // Convert USD to AED (1 USD = 3.67 AED)
+    const aedAmount = currency === 'USD' ? amount * 3.67 : amount;
+    return new Intl.NumberFormat('en-AE', {
       style: 'currency',
-      currency: currency,
-    }).format(amount);
+      currency: 'AED',
+    }).format(aedAmount);
   };
 
   // Empty cart state
@@ -102,11 +104,20 @@ export default function CartPage() {
                   <div className="flex-grow flex flex-col justify-between">
                     <div>
                       <div className="flex justify-between items-start gap-4">
-                        <Link href={`/products/${item.product.slug}`} className="group-hover:text-primary transition-colors">
-                          <h3 className="text-xl font-bold text-text-primary dark:text-white leading-tight mb-1">
-                            {item.product.name}
-                          </h3>
-                        </Link>
+                        <div>
+                          <Link href={`/products/${item.product.slug}`} className="group-hover:text-primary transition-colors">
+                            <h3 className="text-xl font-bold text-text-primary dark:text-white leading-tight mb-1">
+                              {item.product.name}
+                            </h3>
+                          </Link>
+                          <Link 
+                            href={`/products/${item.product.slug}`}
+                            className="text-xs font-bold text-primary hover:text-primary-dark transition-colors flex items-center gap-1 mt-1"
+                          >
+                            <span className="material-symbols-outlined text-sm">visibility</span>
+                            View Product Details
+                          </Link>
+                        </div>
                         <p className="text-lg font-black text-primary whitespace-nowrap">
                           {item.product.price.type === 'fixed' && item.product.price.amount
                             ? formatPrice(item.product.price.amount * item.quantity, item.product.price.currency)
